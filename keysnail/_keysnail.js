@@ -221,6 +221,14 @@ key.setGlobalKey('M-w', function (ev) {
     command.copyRegion(ev);
 }, 'Copy selected text', true);
 
+key.setGlobalKey([['C-s'], ['/']], function (ev) {
+    command.iSearchForwardKs(ev);
+}, 'isearch forward', true);
+
+key.setGlobalKey([['C-r'], ['?']], function (ev) {
+    command.iSearchBackwardKs(ev);
+}, 'isearch backward', true);
+
 key.setGlobalKey(['C-c', 'u'], function (ev) {
     undoCloseTab();
 }, 'Undo closed tab');
@@ -415,14 +423,6 @@ key.setViewKey('w', function (ev, arg) {
     command.closeFindBar();
     ext.exec("copy-page-info", arg, ev);
 }, 'Copy current page info');
-
-key.setViewKey([['C-s'], ['/']], function (ev) {
-    command.iSearchForwardKs(ev);
-}, 'Emacs like incremental search forward', true);
-
-key.setViewKey([['C-r'], ['?']], function (ev) {
-    command.iSearchBackwardKs(ev);
-}, 'Emacs like incremental search backward', true);
 
 key.setViewKey('s', function (ev, arg) {
     command.closeFindBar();
