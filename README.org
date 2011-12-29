@@ -1,0 +1,52 @@
+* My Firefox's config files
+** System
+*** OS
+	- MacOS X Lion
+
+*** Firefox Add-on
+	- https://addons.mozilla.org/ja/firefox/collections/junkw/b51a7725-67ad-8840-5498-eeefe9/
+	- [[https://github.com/mooz/keysnail][Keysnail]]
+
+*** Scriptsh (Greasemonkey) scripts
+	- [[http://userscripts.org/scripts/show/50324][AccessKey Remover]]
+	- [[http://userscripts.org/scripts/show/17869][Gmail Fixed Font]]
+	- [[http://userscripts.org/scripts/show/26426][Gmail Template Switcher]]
+	- [[http://userscripts.org/scripts/show/77648][Google Calendar - Weekend coloration - FR]]
+	- [[http://userscripts.org/scripts/show/78351][Google Reader Full Feed Mod]]
+	- [[http://userscripts.org/scripts/show/17714][Pin Extension for Google Reader]]
+
+*** Keysnail plugins
+	- [[http://github.com/mooz/keysnail/raw/master/plugins/bmany.ks.js][bmany]]
+	- [[https://raw.github.com/gist/1286792/bookmarktag.ks.js][Bookmark tag]]
+	- [[http://github.com/mooz/keysnail/raw/master/plugins/builtin-commands-ext.ks.js][Builtin command as Ext]]
+	- [[http://github.com/mooz/keysnail/raw/master/plugins/caret-hint.ks.js][Caret hint]]
+	- [[https://raw.github.com/gist/1312071/cookie-manager.ks.js][Cookie Manager]]
+	- [[https://raw.github.com/gist/1031072/encoding-switcher.js][Encoding switcher]]
+	- [[https://gist.github.com/raw/905297/find.ks.js][Find]]
+	- [[https://raw.github.com/gist/1011984/firefox-addon-manager.ks.js][Firefox addon manager]]
+	- [[https://raw.github.com/gist/1011926/firefox-plugin-manager.ks.js][Firefox plugin manager]]
+	- [[http://github.com/mooz/keysnail/raw/master/plugins/github-plugin.ks.js][github helper]]
+	- [[https://gist.github.com/raw/895953/history.ks.js][History]]
+	- [[https://github.com/mooz/keysnail/raw/master/plugins/hok.ks.js][Hok]]
+	- [[https://raw.github.com/gist/992351/hok-ex.ks.js][Hok Ex]]
+	- [[http://github.com/myuhe/KeySnail_Plugin/raw/master/K2Emacs.ks.js][K2Emacs]]
+	- [[https://raw.github.com/gist/1369730/ldrnail.ks.js][LDRnail]]
+	- [[https://gist.github.com/raw/895703/RILnail.ks.js][RILnail]]
+	- [[http://github.com/mooz/keysnail/raw/master/plugins/_scrollet.ks.js][Scrollet!]]
+	- [[http://github.com/mooz/keysnail/raw/master/plugins/set-mac.ks.js][Set Mac]]
+	- [[http://github.com/mooz/keysnail/raw/master/plugins/site-local-keymap.ks.js][Site local keymap]]
+	- [[http://github.com/myuhe/KeySnail_Plugin/raw/master/Tanything.ks.js][Tanything]]
+	- [[https://raw.github.com/gist/1286784/user-script-manager-ks.js][User script manager]]
+
+** Setup
+   : $ git clone git://github.com/junkw/firefox_config.git firefox_config
+   : $ ln -s user.js ~/Library/Application\ Support/Firefox/Profiles/PROFILE_DIRECTORY/user.js
+   : $ mkdir ~/Library/Application\ Support/Firefox/Profiles/PROFILE_DIRECTORY/chrome/
+   : $ ln -s userChrome.css ~/Library/Application\ Support/Firefox/Profiles/PROFILE_DIRECTORY/chrome/userChrome.css
+
+   : $ ln -s keysnail/_keysnail.js ~/Library/Application\ Support/Firefox/Profiles/PROFILE_DIRECTORY/keysnail/_keysnail.js
+   or
+   : $ ln -s keysnail/_keysnail.js _/.keysnail.js
+
+   : $ ln -s keysnail/_plugins.keysnail.js ~/Library/Application\ Support/Firefox/Profiles/PROFILE_DIRECTORY/keysnail/_plugins.keysnail.js
+   : $ ln -s keysnail/exts.keysnail.js ~/Library/Application\ Support/Firefox/Profiles/PROFILE_DIRECTORY/keysnail/_exts.keysnail.js

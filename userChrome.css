@@ -1,0 +1,34 @@
+@charset "utf-8";
+@namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul");
+
+/* Disable IME mode in location bar */
+#urlbar *|input { ime-mode: inactive !important; }
+
+/* Translucent context menu */
+#PopupAutoCompleteRichResult[type="autocomplete-richlistbox"] {
+    opacity: 0.96 !important;
+}
+
+/* Hide items in context menu */
+#context-sendpage,             /* Send page in an email */
+#context-sendlink,             /* Send a link in an email */
+#context-sendimage,            /* Send an image in a email */
+#context-setDesktopBackground, /* Set an image as the desktop background */
+#context-blockimage,           /* Block an image */
+#context-viewbgimage           /* view background image */
+{
+    display: none!important;
+}
+
+/* Keyword addition for Add/Change Bookmark
+ * @see http://userstyles.org/styles/9029/keyword-addition-for-add-change-bookmark-fx3 */
+#editBMPanel_keywordRow,
+#editBMPanel_descriptionRow, 
+#editBMPanel_locationRow,
+#editBMPanel_loadInSidebarCheckbox {
+	visibility: visible;
+}
+
+#editBMPanel_tagsSelector[collapsed="true"] {
+	display:none !important;
+}
