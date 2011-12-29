@@ -4,7 +4,7 @@
 	- MacOS X Lion
 
 *** Firefox Add-on
-	- https://addons.mozilla.org/ja/firefox/collections/junkw/b51a7725-67ad-8840-5498-eeefe9/
+	- [[https://addons.mozilla.org/ja/firefox/collections/junkw/b51a7725-67ad-8840-5498-eeefe9/]]
 	- [[https://github.com/mooz/keysnail][Keysnail]]
 
 *** Scriptsh (Greasemonkey) scripts
