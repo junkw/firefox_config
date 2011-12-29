@@ -170,10 +170,12 @@ key.setGlobalKey('C-m', function (ev) {
 }, 'Generate the return key code');
 
 key.setGlobalKey(['C-x', 'l'], function (ev) {
+    command.closeFindBar();
     command.focusToById("urlbar");
 }, 'Focus to the location bar', true);
 
 key.setGlobalKey(['C-x', 'g'], function (ev) {
+    command.closeFindBar();
     command.focusToById("searchbar");
 }, 'Focus to the search bar', true);
 
