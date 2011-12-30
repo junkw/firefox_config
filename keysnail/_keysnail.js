@@ -223,11 +223,11 @@ key.setGlobalKey('M-w', function (ev) {
     command.copyRegion(ev);
 }, 'Copy selected text', true);
 
-key.setGlobalKey([['C-s'], ['/']], function (ev) {
+key.setGlobalKey('C-s', function (ev) {
     command.iSearchForwardKs(ev);
 }, 'isearch forward', true);
 
-key.setGlobalKey([['C-r'], ['?']], function (ev) {
+key.setGlobalKey('C-r', function (ev) {
     command.iSearchBackwardKs(ev);
 }, 'isearch backward', true);
 
