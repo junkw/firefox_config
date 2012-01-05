@@ -29,6 +29,7 @@ local["^https?://mail.google.com/mail/"] = [
     ["U", null], ["_", null], ["C-s", null], ["+", null], ["=", null],
     ["-", null], pass(["q", "w"], 3), ["h", null], pass(["q", "p"], 3), ["T", null]
 ];
+/*
 local["^https?://www.google.(com|co.jp)/reader/view/"] = [
     // navigation
     ["j", null], ["k", null], ["SPC", null], ["S-SPC", null], ["n", null],
@@ -46,6 +47,7 @@ local["^https?://www.google.(com|co.jp)/reader/view/"] = [
     // add-on, user-script
     ["@", null], ["i", null], ["z", null]
 ];
+*/
 local["^https?://www.google.com/calendar/"] = [
     // navigation
     ["j", null], ["k", null], ["n", null], ["p", null], ["t", null],

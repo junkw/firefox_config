@@ -137,6 +137,17 @@ hook.setHook('KeyBoardQuit', function (aEvent) {
     }
 });
 
+// ============================== Black list =============================== //
+
+hook.addToHook("LocationChange", function (aNsURI) {
+    var URL = aNsURI ? aNsURI.spec : null;
+    key.suspendWhenMatched(URL, key.blackList);
+});
+
+key.blackList = [
+    '^https?://www\.google\.(com|co\.jp)/reader/.*'
+];
+
 // ============================= Key bindings ============================== //
 
 // Global
