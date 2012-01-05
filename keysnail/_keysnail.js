@@ -48,7 +48,7 @@ util.extendDefaultKeymap = function(keymap) {
 };
 
 // Load init files
-// @see @see https://github.com/958/my-keysnail-setting/blob/master/.keysnail.js
+// @see https://github.com/958/my-keysnail-setting/blob/master/.keysnail.js
 (function() {
     try {
         userscript.addLoadPath(util.getExtensionLocalDirectoryRoot().path);
