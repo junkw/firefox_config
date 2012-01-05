@@ -474,9 +474,11 @@ key.setViewKey(':', function (ev, arg) {
     shell.input(null, arg);
 }, 'List and execute commands', true);
 
+/*
 key.setViewKey('i', function (ev, arg) {
     nsPreferences.setBoolPref("accessibility.browsewithcaret", true);
 }, 'Caret mode', true);
+*/
 
 // Edit mode
 key.setEditKey(["C-c", "C-e"], function (ev, arg) {
@@ -756,6 +758,8 @@ key.setCaretKey(':', function (ev, arg) {
     shell.input(null, arg);
 }, 'List and execute commands', true);
 
+/*
 key.setCaretKey('ESC', function (ev, arg) {
     nsPreferences.setBoolPref("accessibility.browsewithcaret", false);
 }, 'Escape from caret mode', true);
+*/
