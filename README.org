@@ -21,7 +21,7 @@
 	- [[https://github.com/mooz/keysnail/raw/master/plugins/builtin-commands-ext.ks.js][Builtin command as Ext]]
 	- [[https://github.com/mooz/keysnail/raw/master/plugins/caret-hint.ks.js][Caret hint]]
 	- [[https://raw.github.com/gist/1312071/cookie-manager.ks.js][Cookie Manager]]
-	- [[https://raw.github.com/gist/1031072/encoding-switcher.js][Encoding switcher]]
+	- [[https://raw.github.com/gist/1031072/encoding-switcher.js][Encoding switcher]] (need to rename 'encoding-switcher.ks.js')
 	- [[https://gist.github.com/raw/905297/find.ks.js][Find]]
 	- [[https://raw.github.com/gist/1011984/firefox-addon-manager.ks.js][Firefox addon manager]]
 	- [[https://raw.github.com/gist/1011926/firefox-plugin-manager.ks.js][Firefox plugin manager]]
@@ -36,17 +36,15 @@
 	- [[https://github.com/mooz/keysnail/raw/master/plugins/set-mac.ks.js][Set Mac]]
 	- [[https://github.com/mooz/keysnail/raw/master/plugins/site-local-keymap.ks.js][Site local keymap]]
 	- [[https://github.com/myuhe/KeySnail_Plugin/raw/master/Tanything.ks.js][Tanything]]
-	- [[https://raw.github.com/gist/1286784/user-script-manager-ks.js][User script manager]]
+	- [[https://raw.github.com/gist/1286784/user-script-manager-ks.js][User script manager]] (need to rename 'user-script-manager.ks.js')
 
 ** Setup
    : $ git clone git://github.com/junkw/firefox_config.git firefox_config
    : $ ln -s user.js ~/Library/Application\ Support/Firefox/Profiles/PROFILE_DIRECTORY/user.js
    : $ mkdir ~/Library/Application\ Support/Firefox/Profiles/PROFILE_DIRECTORY/chrome/
    : $ ln -s userChrome.css ~/Library/Application\ Support/Firefox/Profiles/PROFILE_DIRECTORY/chrome/userChrome.css
-
-   : $ ln -s keysnail/_keysnail.js ~/Library/Application\ Support/Firefox/Profiles/PROFILE_DIRECTORY/keysnail/_keysnail.js
-   or
-   : $ ln -s keysnail/_keysnail.js _/.keysnail.js
-
+   : $ ln -s keysnail/_keysnail.js ~/.keysnail.js
    : $ ln -s keysnail/_plugins.keysnail.js ~/Library/Application\ Support/Firefox/Profiles/PROFILE_DIRECTORY/keysnail/_plugins.keysnail.js
    : $ ln -s keysnail/exts.keysnail.js ~/Library/Application\ Support/Firefox/Profiles/PROFILE_DIRECTORY/keysnail/_exts.keysnail.js
+
+After Firefox is launched, execute =M-x auto-install-plugins=.
