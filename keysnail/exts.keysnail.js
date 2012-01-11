@@ -2,28 +2,28 @@
 
 // Auto install plugins
 // @see http://d.hatena.ne.jp/sr10/20120109/1326108732
-ext.add('auto-install-plugins', function(ev, arg){
+ext.add("auto-install-plugins", function(ev, arg){
     var urls = [
-        'http://github.com/mooz/keysnail/raw/master/plugins/bmany.ks.js',
-        'https://raw.github.com/gist/1286792/bookmarktag.ks.js',
-        'http://github.com/mooz/keysnail/raw/master/plugins/builtin-commands-ext.ks.js',
-        'http://github.com/mooz/keysnail/raw/master/plugins/caret-hint.ks.js',
-        'https://raw.github.com/gist/1312071/cookie-manager.ks.js',
-        'https://raw.github.com/gist/1031072/encoding-switcher.js',
-        'https://gist.github.com/raw/905297/find.ks.js',
-        'https://raw.github.com/gist/1011984/firefox-addon-manager.ks.js',
-        'https://raw.github.com/gist/1011926/firefox-plugin-manager.ks.js',
-        'http://github.com/mooz/keysnail/raw/master/plugins/github-plugin.ks.js',
-        'https://gist.github.com/raw/895953/history.ks.js',
-        'https://github.com/mooz/keysnail/raw/master/plugins/hok.ks.js',
-        'https://raw.github.com/gist/992351/hok-ex.ks.js',
-        'http://github.com/myuhe/KeySnail_Plugin/raw/master/K2Emacs.ks.js',
-        'https://raw.github.com/gist/1369730/ldrnail.ks.js',
-        'https://gist.github.com/raw/895703/RILnail.ks.js',
-        'http://github.com/mooz/keysnail/raw/master/plugins/_scrollet.ks.js',
-        'http://github.com/mooz/keysnail/raw/master/plugins/site-local-keymap.ks.js',
-        'http://github.com/myuhe/KeySnail_Plugin/raw/master/Tanything.ks.js',
-        'https://raw.github.com/gist/1286784/user-script-manager-ks.js'
+        "https://github.com/mooz/keysnail/raw/master/plugins/bmany.ks.js",
+        "https://raw.github.com/gist/1286792/bookmarktag.ks.js",
+        "https://github.com/mooz/keysnail/raw/master/plugins/builtin-commands-ext.ks.js",
+        "https://github.com/mooz/keysnail/raw/master/plugins/caret-hint.ks.js",
+        "https://raw.github.com/gist/1312071/cookie-manager.ks.js",
+        "https://raw.github.com/gist/1031072/encoding-switcher.js",
+        "https://gist.github.com/raw/905297/find.ks.js",
+        "https://raw.github.com/gist/1011984/firefox-addon-manager.ks.js",
+        "https://raw.github.com/gist/1011926/firefox-plugin-manager.ks.js",
+        "https://github.com/mooz/keysnail/raw/master/plugins/github-plugin.ks.js",
+        "https://gist.github.com/raw/895953/history.ks.js",
+        "https://github.com/mooz/keysnail/raw/master/plugins/hok.ks.js",
+        "https://raw.github.com/gist/992351/hok-ex.ks.js",
+        "https://github.com/myuhe/KeySnail_Plugin/raw/master/K2Emacs.ks.js",
+        "https://raw.github.com/gist/1369730/ldrnail.ks.js",
+        "https://gist.github.com/raw/895703/RILnail.ks.js",
+        "https://github.com/mooz/keysnail/raw/master/plugins/_scrollet.ks.js",
+        "https://github.com/mooz/keysnail/raw/master/plugins/site-local-keymap.ks.js",
+        "https://github.com/myuhe/KeySnail_Plugin/raw/master/Tanything.ks.js",
+        "https://raw.github.com/gist/1286784/user-script-manager-ks.js"
     ];
 
     function inst (a) {
@@ -41,7 +41,7 @@ ext.add('auto-install-plugins', function(ev, arg){
         }
     }
     inst(urls);
-}, 'Install plugins automatically if not installed yet.');
+}, "Install plugins automatically if not installed yet.");
 
 // Describe Key
 // @see https://gist.github.com/420462
