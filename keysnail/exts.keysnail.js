@@ -33,15 +33,15 @@ ext.add('auto-install-plugins', function(ev, arg){
             var url  = a.shift();
             var path = userscript.pluginDir + userscript.directoryDelimiter + url.match(/[^/]+$/)[0];
 
-        if (plugins.context[path] === undefined) {
-            userscript.installPluginFromURL(url, function(){inst(a);});
-        } else {
-            inst(a);
+            if (plugins.context[path] === undefined) {
+                userscript.installPluginFromURL(url, function(){inst(a);});
+            } else {
+                inst(a);
+            }
         }
     }
-}
-        inst(urls);
-       }, 'Install plugins automatically if not installed yet.');
+    inst(urls);
+}, 'Install plugins automatically if not installed yet.');
 
 // Describe Key
 // @see https://gist.github.com/420462
