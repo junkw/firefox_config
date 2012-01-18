@@ -485,11 +485,10 @@ key.setViewKey(':', function (ev, arg) {
     shell.input(null, arg);
 }, 'List and execute commands', true);
 
-/*
+// @see https://github.com/958/my-keysnail-setting/blob/master/.keysnail.js
 key.setViewKey('i', function (ev, arg) {
-    nsPreferences.setBoolPref("accessibility.browsewithcaret", true);
+    util.setBoolPref("accessibility.browsewithcaret", !util.getBoolPref("accessibility.browsewithcaret"));
 }, 'Caret mode', true);
-*/
 
 // Edit mode
 key.setEditKey(["C-c", "C-e"], function (ev, arg) {
@@ -769,8 +768,7 @@ key.setCaretKey(':', function (ev, arg) {
     shell.input(null, arg);
 }, 'List and execute commands', true);
 
-/*
+// @see https://github.com/958/my-keysnail-setting/blob/master/.keysnail.js
 key.setCaretKey('ESC', function (ev, arg) {
-    nsPreferences.setBoolPref("accessibility.browsewithcaret", false);
+    util.setBoolPref("accessibility.browsewithcaret", !util.getBoolPref("accessibility.browsewithcaret"));
 }, 'Escape from caret mode', true);
-*/
