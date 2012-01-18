@@ -212,11 +212,12 @@ ext.add("css-toggle",function(){
 // Copy current page info
 ext.add("copy-page-info", function(ev, arg) {
     var templates = {
-        Title : "{0}",
-        URL: "{1}",
-        Link : "<a href=\"{1}\">{0}</a>",
-        Doxygen : "@see {1}",
-        Org : "[[{1}][{0}]]"
+        Title    : "{0}",
+        URL      : "{1}",
+        Link     : "<a href=\"{1}\">{0}</a>",
+        Doxygen  : "@see {1}",
+        TracWiki : "[{1} {0}]",
+        Org      : "[[{1}][{0}]]"
     };
 
     function getLineSeprator() {
