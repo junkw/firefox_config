@@ -27,9 +27,8 @@ local["^https?://mail.google.com/mail/"] = [
     ["<tab>", null], ["RET", null], ["ESC", null], ["]", null], ["}", null],
     ["[", null], ["{", null], ["z", null], [".", null], ["I", null],
     ["U", null], ["_", null], ["C-s", null], ["+", null], ["=", null],
-    ["-", null], pass(["q", "w"], 3), ["h", null], pass(["q", "p"], 3), ["T", null]
+    ["-", null], ["h", null], ["T", null]
 ];
-/*
 local["^https?://www.google.(com|co.jp)/reader/view/"] = [
     // navigation
     ["j", null], ["k", null], ["SPC", null], ["S-SPC", null], ["n", null],
@@ -47,7 +46,6 @@ local["^https?://www.google.(com|co.jp)/reader/view/"] = [
     // add-on, user-script
     ["@", null], ["i", null], ["z", null]
 ];
-*/
 local["^https?://www.google.com/calendar/"] = [
     // navigation
     ["j", null], ["k", null], ["n", null], ["p", null], ["t", null],
@@ -61,10 +59,11 @@ local["^https?://www.google.com/calendar/"] = [
     ["M-?", null], ["?", null]
 ];
 local["^https://github.com/"] = [
-    // site wide shortcuts
-    ["s", null], ["?", null],
-    // source code browsing
-    ["t", null], ["l", null], ["w", null], ["y", null]
+    ["s", null], ["?", null], ["t", null], ["l", null], ["w", null],
+    ["y", null], ["c", null], ["o", null], ["RET", null], ["x", null]
+    ["i", null], ["I", null], ["u", null], ["U", null], ["e", null],
+    ["/", null], ["h", null], ["H", null], ["j", null], ["J", null],
+    ["k", null], ["K", null], ["l", null], ["L", null]
 ];
 
 // LDRnail

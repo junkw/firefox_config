@@ -145,7 +145,6 @@ hook.addToHook("LocationChange", function (aNsURI) {
 });
 
 key.blackList = [
-    '^https?://www\.google\.(com|co\.jp)/reader/.*'
 ];
 
 // ============================= Key bindings ============================== //
@@ -432,7 +431,7 @@ key.setViewKey(['C-c', 'e'], function (aEvent, aArg) {
     ext.exec("hok-start-continuous-mode", aArg);
 }, 'Start continuous HaH', true);
 
-key.setViewKey('w', function (ev, arg) {
+key.setViewKey('W', function (ev, arg) {
     command.closeFindBar();
     ext.exec("copy-page-info", arg, ev);
 }, 'Copy current page info');
