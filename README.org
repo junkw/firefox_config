@@ -6,6 +6,7 @@
 *** Firefox Add-on
 	- [[https://addons.mozilla.org/ja/firefox/collections/junkw/b51a7725-67ad-8840-5498-eeefe9/]]
 	- [[https://github.com/mooz/keysnail][Keysnail]]
+	- [[https://cloudmagic.com/][CloudMagic]]
 
 *** Scriptsh (Greasemonkey) scripts
 	- [[http://userscripts.org/scripts/show/50324][AccessKey Remover]]
