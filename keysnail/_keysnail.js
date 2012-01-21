@@ -436,7 +436,7 @@ key.setViewKey('W', function (ev, arg) {
     ext.exec("copy-page-info", arg, ev);
 }, 'Copy current page info');
 
-key.setViewKey('s', function (ev, arg) {
+key.setViewKey(['C-x', 'G'], function (ev, arg) {
     command.closeFindBar();
     ext.exec("search-with-suggest", arg, ev);
 }, 'Search with suggest', true);
