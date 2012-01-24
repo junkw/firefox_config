@@ -485,7 +485,7 @@ key.setViewKey(':', function (ev, arg) {
 }, 'List and execute commands', true);
 
 // @see https://github.com/958/my-keysnail-setting/blob/master/.keysnail.js
-key.setViewKey('i', function (ev, arg) {
+key.setViewKey('C', function (ev, arg) {
     util.setBoolPref("accessibility.browsewithcaret", !util.getBoolPref("accessibility.browsewithcaret"));
 }, 'Caret mode', true);
 
@@ -768,6 +768,6 @@ key.setCaretKey(':', function (ev, arg) {
 }, 'List and execute commands', true);
 
 // @see https://github.com/958/my-keysnail-setting/blob/master/.keysnail.js
-key.setCaretKey('ESC', function (ev, arg) {
+key.setCaretKey([['ESC'], ['q']], function (ev, arg) {
     util.setBoolPref("accessibility.browsewithcaret", !util.getBoolPref("accessibility.browsewithcaret"));
 }, 'Escape from caret mode', true);
