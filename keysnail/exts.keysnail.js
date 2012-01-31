@@ -135,6 +135,11 @@ ext.add("describe-key", function (ev, arg) {
     window.addEventListener("keypress", handleKeyPress, true);
 }, "Describe key");
 
+// Firefox Sync
+ext.add("sync-firefox-data", function() {
+    window.gSyncUI.doSync();
+}, "Start Firefox Sync");
+
 // Clear cache
 // @see http://www.pshared.net/diary/20111029.html
 ext.add("clear-cache", function(ev, arg) {
