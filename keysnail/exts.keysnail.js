@@ -210,54 +210,60 @@ ext.add("list-closed-tabs", function () {
 
 // imenu on the current page headline
 // @see http://keysnail.g.hatena.ne.jp/mooz/20120212/1329040579
-ext.add("imenu-headline", function () {
-  let anchorSelector = [
-    "h1",
-    "h2",
-    "h3",
-    "h4"
-  ].join(",");
+ext.add("imenu-headline", function() {
+    let anchorSelector = [
+        "h1",
+        "h2",
+        "h3",
+        "h4",
+        "h5"        
+    ].join(",");
 
-  let elements = Array.slice(content.document.querySelectorAll(anchorSelector));
+    let elements = Array.slice(content.document.querySelectorAll(anchorSelector));
 
-  function elementToString(element) {
-    let headerString = "",
-        matched = null;
-    if ((matched = element.localName.match(/h([0-9])/))) {
-      let headerCount = parseInt(matched[1], 10);
-      headerString = (new Array(headerCount)).join("  ");
+    function elementToString(element) {
+        let headlineString = "", matched = null;
 
-      let headerMarks = {
-        1: '',            /* none */
-        2: "\u2023",      /* right arrow */
-        3: "\u2022",      /* bullet */
-        4: "\u25E6"       /* white bullet */
-      };
+        if ((matched = element.localName.match(/h([0-9])/))) {
+            let headlineCount = parseInt(matched[1], 10);
+            headlineString    = (new Array(headlineCount)).join("  ");
 
-      if (headerMarks[headerCount])
-        headerString = headerString + headerMarks[headerCount] + " ";
+            let headlineMarks = {
+                1 : "",          // none
+                2 : "\u2023",    // triangular bullet
+                3 : "\u25E6",    // white bullet
+                4 : "\u2022",    // bullet
+                5 : "\u2043"     // hyphen bullet
+            };
+
+            if (headlineMarks[headlineCount]) {
+                headlineString = headlineString + headlineMarks[headlineCount] + " ";
+            }
+        }
+
+        return headlineString + element.textContent;
     }
 
-    return headerString + element.textContent;
-  }
-
-  function scrollToElement(element) {
-    let anchor = element.getAttribute("id") || element.getAttribute("name");
-    if (anchor)
-      content.location.hash = anchor;
-    else
-      element.scrollIntoView();
-  }
-
-  prompt.selector({
-    message: "jump to: ",
-    collection: elements.map(function (element) elementToString(element)),
-    callback: function (selectedIndex) {
-      if (selectedIndex < 0)
-        return;
-      scrollToElement(elements[selectedIndex]);
+    function scrollToElement(element) {
+        let anchor = element.getAttribute("id") || element.getAttribute("name");
+        if (anchor) {
+            content.location.hash = anchor;
+        } else {
+            element.scrollIntoView();
+        }
     }
-  });
+
+    prompt.selector({
+        message    : "Jump to: ",
+        collection : elements.map(function (element) elementToString(element)),
+        callback   : function (selectedIndex) {
+            if (selectedIndex < 0) {
+                return;
+            }
+
+            scrollToElement(elements[selectedIndex]);
+        }
+    });
 }, "imenu on the current page headline", true);
 
 // Toggle style sheet
