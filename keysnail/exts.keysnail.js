@@ -208,6 +208,58 @@ ext.add("list-closed-tabs", function () {
         });
 }, "List closed tabs");
 
+// imenu on the current page headline
+// @see http://keysnail.g.hatena.ne.jp/mooz/20120212/1329040579
+ext.add("imenu-headline", function () {
+  let anchorSelector = [
+    "h1",
+    "h2",
+    "h3",
+    "h4"
+  ].join(",");
+
+  let elements = Array.slice(content.document.querySelectorAll(anchorSelector));
+
+  function elementToString(element) {
+    let headerString = "",
+        matched = null;
+    if ((matched = element.localName.match(/h([0-9])/))) {
+      let headerCount = parseInt(matched[1], 10);
+      headerString = (new Array(headerCount)).join("  ");
+
+      let headerMarks = {
+        1: '',            /* none */
+        2: "\u2023",      /* right arrow */
+        3: "\u2022",      /* bullet */
+        4: "\u25E6"       /* white bullet */
+      };
+
+      if (headerMarks[headerCount])
+        headerString = headerString + headerMarks[headerCount] + " ";
+    }
+
+    return headerString + element.textContent;
+  }
+
+  function scrollToElement(element) {
+    let anchor = element.getAttribute("id") || element.getAttribute("name");
+    if (anchor)
+      content.location.hash = anchor;
+    else
+      element.scrollIntoView();
+  }
+
+  prompt.selector({
+    message: "jump to: ",
+    collection: elements.map(function (element) elementToString(element)),
+    callback: function (selectedIndex) {
+      if (selectedIndex < 0)
+        return;
+      scrollToElement(elements[selectedIndex]);
+    }
+  });
+}, "imenu on the current page headline", true);
+
 // Toggle style sheet
 // @see http://lab.designsatellites.jp/?p=1499
 ext.add("css-toggle",function(){
