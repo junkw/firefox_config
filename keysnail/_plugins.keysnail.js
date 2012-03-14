@@ -68,8 +68,8 @@ local["^https://github.com/"] = [
 
 // LDRnail
 plugins.options["ldrnail.include_urls"] = [
-    "^http://www\\.google\\.(co\\.jp|com)/search.*",
-    "^http://www\\.amazon\\.co\\.jp/s/.*"
+    "^https?://www\\.google\\.(co\\.jp|com)/search.*",
+    "^https?://www\\.amazon\\.co\\.jp/s/.*"
 ];
 
 plugins.options["ldrnail.keybind"] = {
