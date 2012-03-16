@@ -382,7 +382,7 @@ key.setViewKey('C-M-s', function (ev) {
     openUILinkIn('view-source:' + content.location.href, 'tab');
 }, 'View Source');
 
-key.setViewKey(['C-x', 'RET', 't'], function (ev, arg) {
+key.setViewKey(['C-x', 'RET', 'r'], function (ev, arg) {
     command.closeFindBar();
     ext.exec('set-encoding', arg, ev);
 }, 'Set encoding', true);
