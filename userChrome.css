@@ -10,12 +10,32 @@
 }
 
 /* Hide items in context menu */
+#context-back,
+#context-forward,
+#context-reload,
+#context-stop,
+#context-sep-stop,             /* Line separator under the stop */
 #context-sendpage,             /* Send page in an email */
 #context-sendlink,             /* Send a link in an email */
 #context-sendimage,            /* Send an image in a email */
 #context-setDesktopBackground, /* Set an image as the desktop background */
 #context-blockimage,           /* Block an image */
-#context-viewbgimage           /* view background image */
+#context-viewbgimage           /* View background image */
+{
+    display: none!important;
+}
+
+/* Hide Add-on's items in context menu */
+#RIL_context_saveLink,                    /* Read It Later */
+#RIL_context_savePage,
+#RIL_context_clickMode,
+#RIL_context_saveTabs,
+#readable_by_evernote__context_menu,      /* Clearly */
+#webclipper-contextmenu-sep,              /* Evernote */
+#webclipper3-contextmenu-item,
+#webclipper3-contextmenu,
+#webclipper3-contextmenu + menuseparator,
+#cloudmagic-display-menuitem              /* CloudMagic */
 {
     display: none!important;
 }
@@ -23,12 +43,12 @@
 /* Keyword addition for Add/Change Bookmark
  * @see http://userstyles.org/styles/9029/keyword-addition-for-add-change-bookmark-fx3 */
 #editBMPanel_keywordRow,
-#editBMPanel_descriptionRow, 
+#editBMPanel_descriptionRow,
 #editBMPanel_locationRow,
 #editBMPanel_loadInSidebarCheckbox {
-	visibility: visible;
+    visibility: visible;
 }
 
 #editBMPanel_tagsSelector[collapsed="true"] {
-	display:none !important;
+    display:none !important;
 }
