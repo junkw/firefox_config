@@ -3,13 +3,13 @@
 *** OS
 	- MacOS X Lion
 
-*** Firefox Add-on
+*** Firefox Add-ons
 	- [[https://addons.mozilla.org/ja/firefox/collections/junkw/b51a7725-67ad-8840-5498-eeefe9/]]
 	- [[https://github.com/mooz/keysnail][Keysnail]]
-	- [[https://cloudmagic.com/][CloudMagic]]
 
 *** Scriptsh (Greasemonkey) scripts
 	- [[http://userscripts.org/scripts/show/50324][AccessKey Remover]]
+	- [[http://userscripts.org/scripts/show/62909][Fix HootSuite for Greasemonkey]]
 	- [[http://userscripts.org/scripts/show/17869][Gmail Fixed Font]]
 	- [[http://userscripts.org/scripts/show/26426][Gmail Template Switcher]]
 	- [[http://userscripts.org/scripts/show/77648][Google Calendar - Weekend coloration - FR]]
