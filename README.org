@@ -17,6 +17,7 @@
 	- [[http://userscripts.org/scripts/show/17714][Pin Extension for Google Reader]]
 
 *** Keysnail plugins
+	- [[https://raw.github.com/gist/1000062/append_anchor.ks.js][Append Anchor]]
 	- [[https://github.com/mooz/keysnail/raw/master/plugins/bmany.ks.js][bmany]]
 	- [[https://raw.github.com/gist/1286792/bookmarktag.ks.js][Bookmark tag]]
 	- [[https://github.com/mooz/keysnail/raw/master/plugins/builtin-commands-ext.ks.js][Builtin command as Ext]]

@@ -4,6 +4,7 @@
 // @see http://d.hatena.ne.jp/sr10/20120109/1326108732
 ext.add("auto-install-plugins", function(ev, arg) {
     var urls = [
+        "https://raw.github.com/gist/1000062/append_anchor.ks.js",
         "https://github.com/mooz/keysnail/raw/master/plugins/bmany.ks.js",
         "https://raw.github.com/gist/1286792/bookmarktag.ks.js",
         "https://github.com/mooz/keysnail/raw/master/plugins/builtin-commands-ext.ks.js",
