@@ -11,6 +11,7 @@ ext.add("auto-install-plugins", function(ev, arg) {
         "https://github.com/mooz/keysnail/raw/master/plugins/caret-hint.ks.js",
         "https://raw.github.com/gist/1312071/cookie-manager.ks.js",
         "https://raw.github.com/gist/1031072/encoding-switcher.js",
+        "https://raw.github.com/mooz/keysnail/master/plugins/dabbrev.ks.js",
         "https://gist.github.com/raw/905297/find.ks.js",
         "https://raw.github.com/gist/1011984/firefox-addon-manager.ks.js",
         "https://raw.github.com/gist/1011926/firefox-plugin-manager.ks.js",

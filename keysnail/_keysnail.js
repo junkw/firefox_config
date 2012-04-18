@@ -655,6 +655,11 @@ key.setEditKey('M-p', function (ev) {
     command.walkInputElement(command.elementsRetrieverTextarea, false, true);
 }, 'Focus to the previous text area');
 
+// @see http://lab.designsatellites.jp/?p=1499
+key.setEditKey(plugins.options["dabbrev.next_key"], function (ev, arg) {
+    ext.exec("dabbrev-expand", arg, ev);
+}, "Expand previous word \"dynamically\".");
+
 // Caret mode
 key.setCaretKey([['C-a'], ['^']], function (ev) {
     ev.target.ksMarked ? goDoCommand("cmd_selectBeginLine") : goDoCommand("cmd_beginLine");

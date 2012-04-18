@@ -114,6 +114,30 @@ plugins.options["ldrnail.pinned_list_keymap"] = {
     "s": "scroll"
 };
 
+// Expander
+// @see http://lab.designsatellites.jp/?p=1499
+plugins.options["dabbrev.next_key"] = "C-i";
+plugins.options["dabbrev.prev_key"] = "C-M-i";
+
+plugins.options["dabbrev.candidates"] = [
+    "Apache",
+    "CentOS",
+    "Chrome",
+    "Debian",
+    "Facebook",
+    "Emacs",
+    "Evernote",
+    "Firefox",
+    "Github",
+    "KeySnail",
+    "MacOS X",
+    "PostgreSQL",
+    "Safari",
+    "Twitter",
+    "ubuntu",
+    "Windows"
+];
+
 // K2Emacs
 plugins.options["K2Emacs.editor"] = "/usr/local/bin/emacsclient -a /Applications/TextEdit.app/Contents/MacOS/TextEdit";
 plugins.options["K2Emacs.ext"]    = "txt";
