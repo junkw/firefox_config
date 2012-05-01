@@ -14,13 +14,20 @@
 #context-forward,
 #context-reload,
 #context-stop,
-#context-sep-stop,             /* Line separator under the stop */
+#context-sep-stop,             /* Line separator */
 #context-sendpage,             /* Send page in an email */
 #context-sendlink,             /* Send a link in an email */
 #context-sendimage,            /* Send an image in a email */
 #context-setDesktopBackground, /* Set an image as the desktop background */
 #context-blockimage,           /* Block an image */
-#context-viewbgimage           /* View background image */
+#context-viewbgimage,          /* View background image */
+#context-viewpartialsource-selection, /* View Selection Source */
+#context-viewpartialsource-mathml,    /* View MathML Source */
+#context-sep-viewsource,       /* Line separator */
+#context-viewsource,           /* View Page Source */
+#context-viewinfo,             /* View Page Info */
+#context-inspect,              /* Inspect Element */
+#inspect-separator             /* Line separator */
 {
     display: none!important;
 }
@@ -31,10 +38,11 @@
 #RIL_context_clickMode,
 #RIL_context_saveTabs,
 #readable_by_evernote__context_menu,      /* Clearly */
+#readable_by_evernote__context_menu + menuseparator,
 #webclipper-contextmenu-sep,              /* Evernote */
 #webclipper3-contextmenu-item,
 #webclipper3-contextmenu,
-#webclipper3-contextmenu + menuseparator,
+#webclipper3-contextmenu-popup,
 #cloudmagic-display-menuitem              /* CloudMagic */
 {
     display: none!important;
