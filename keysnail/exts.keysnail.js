@@ -287,9 +287,14 @@ ext.add("imenu-headline", function() {
     });
 }, "imenu on the current page headline", true);
 
+// View current page source
+ext.add("view-page-source", function() {
+    openUILinkIn('view-source:' + content.location.href, 'tab');
+}, "View current page source");
+
 // Toggle style sheet
 // @see http://lab.designsatellites.jp/?p=1499
-ext.add("css-toggle",function() {
+ext.add("css-toggle", function() {
     getMarkupDocumentViewer().authorStyleDisabled = !getMarkupDocumentViewer().authorStyleDisabled;
 }, "Toggle style sheet");
 
