@@ -32,6 +32,14 @@
     display: none!important;
 }
 
+/* Hide frame items in context menu */
+#context-printframe + menuseparator, /* Line separator */
+#context-viewframesource,            /* View Frame Source */
+#context-viewframeinfo               /* View Frame Info */
+{
+    display: none!important;
+}
+
 /* Hide Add-on's items in context menu */
 #RIL_context_saveLink,                    /* Read It Later */
 #RIL_context_savePage,
