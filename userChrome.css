@@ -41,17 +41,17 @@
 }
 
 /* Hide Add-on's items in context menu */
-#RIL_context_saveLink,                    /* Read It Later */
+#RIL_context_saveLink,               /* Read It Later */
 #RIL_context_savePage,
 #RIL_context_clickMode,
-#RIL_context_saveTabs,
-#readable_by_evernote__context_menu,      /* Clearly */
-#readable_by_evernote__context_menu + menuseparator,
-#webclipper-contextmenu-sep,              /* Evernote */
-#webclipper3-contextmenu-item,
+/* #RIL_context_saveTabs, */
+#readable_by_evernote__context_menu, /* Clearly */
+#webclipper-contextmenu-sep,
+#webclipper3-contextmenu-item,       /* Evernote*/
 #webclipper3-contextmenu,
 #webclipper3-contextmenu-popup,
-#cloudmagic-display-menuitem              /* CloudMagic */
+#webclipper3-contextmenu + menuseparator,
+#cloudmagic-display-menuitem         /* CloudMagic */
 {
     display: none!important;
 }
