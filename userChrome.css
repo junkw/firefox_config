@@ -46,12 +46,12 @@
 #RIL_context_clickMode,
 /* #RIL_context_saveTabs, */
 #readable_by_evernote__context_menu, /* Clearly */
-#webclipper-contextmenu-sep,
-#webclipper3-contextmenu-item,       /* Evernote*/
+#readable_by_evernote__context_menu + menuseparator,
+#cloudmagic-display-menuitem,        /* CloudMagic */
+#webclipper-contextmenu-sep,         /* Evernote*/
+#webclipper3-contextmenu-item,
 #webclipper3-contextmenu,
-#webclipper3-contextmenu-popup,
-#webclipper3-contextmenu + menuseparator,
-#cloudmagic-display-menuitem         /* CloudMagic */
+#webclipper3-contextmenu-popup
 {
     display: none!important;
 }
