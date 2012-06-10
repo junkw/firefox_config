@@ -1,4 +1,4 @@
-// -*- mode: js2-mode; coding: utf-8; indent-tabs-mode: nil -*-
+// -*- mode: js2; coding: utf-8; indent-tabs-mode: nil -*-
 
 // Auto install plugins
 // @see http://d.hatena.ne.jp/sr10/20120109/1326108732

@@ -1,3 +1,5 @@
+// -*- mode: js2; coding: utf-8; indent-tabs-mode: nil -*-
+
 // Auto-assignment on memory cache
 user_pref("browser.cache.memory.capacity", -1);
 

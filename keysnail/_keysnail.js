@@ -1,4 +1,4 @@
-// -*- mode: js2-mode; coding: utf-8; indent-tabs-mode: nil -*-
+// -*- mode: js2; coding: utf-8; indent-tabs-mode: nil -*-
 
 // ========================== KeySnail Init File =========================== //
 
