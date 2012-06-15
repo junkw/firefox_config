@@ -12,6 +12,9 @@ user_pref("network.http.spdy.enabled", true);
 // Use "I'm Feeling Lucky" in location bar
 user_pref("keyword.URL", "http://www.google.com/search?btnI=I%27m+Feeling+Lucky&ie=UTF-8&oe=UTF-8&q=");
 
+// about:newtab
+user_pref("browser.newtabpage.enabled", true);
+
 // Tab width
 user_pref("browser.tabs.tabMaxWidth", 200);
 user_pref("browser.tabs.tabMinWidth", 100);

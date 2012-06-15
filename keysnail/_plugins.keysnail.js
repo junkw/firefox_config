@@ -166,6 +166,9 @@ plugins.options["bmany.keymap"] = {
 
 // History
 plugins.options['history.max-results'] = 5000;
+plugins.options["hok.local_queries"] = [
+    ["^about:newtab$", "a, input:not(.newtab-control-pin)", true]
+];
 
 // Hok ex
 plugins.options['hok_ex.extra_actions'] = [
