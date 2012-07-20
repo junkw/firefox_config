@@ -28,8 +28,9 @@
 #context-sep-viewsource,       /* Line separator */
 #context-viewsource,           /* View Page Source */
 #context-viewinfo,             /* View Page Info */
+#inspect-separator,            /* Line separator */
 #context-inspect,              /* Inspect Element */
-#inspect-separator             /* Line separator */
+#context-inspect + menuseparator
 {
     display: none!important;
 }
