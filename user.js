@@ -16,6 +16,9 @@ user_pref("keyword.URL", "http://www.google.com/search?btnI=I%27m+Feeling+Lucky&
 // about:newtab
 user_pref("browser.newtabpage.enabled", true);
 
+// Enable In-Content Preferences
+user_pref("browser.preferences.inContent", true);
+
 // Tab width
 user_pref("browser.tabs.tabMaxWidth", 200);
 user_pref("browser.tabs.tabMinWidth", 100);
