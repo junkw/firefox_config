@@ -8,6 +8,7 @@ user_pref("browser.cache.memory.capacity", -1);
 
 // Enable SPDY protocol
 user_pref("network.http.spdy.enabled", true);
+user_pref("network.http.spdy.enabled.v3", true);
 
 // Use "I'm Feeling Lucky" in location bar
 user_pref("keyword.URL", "http://www.google.com/search?btnI=I%27m+Feeling+Lucky&ie=UTF-8&oe=UTF-8&q=");
