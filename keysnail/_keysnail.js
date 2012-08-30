@@ -655,9 +655,8 @@ key.setEditKey('M-p', function (ev) {
     command.walkInputElement(command.elementsRetrieverTextarea, false, true);
 }, 'Focus to the previous text area');
 
-// @see http://lab.designsatellites.jp/?p=1499
 key.setEditKey(plugins.options["dabbrev.next_key"], function (ev, arg) {
-    ext.exec("dabbrev-expand", arg, ev);
+    ext.exec("dabbrev-expand-with-suggestions", arg, ev);
 }, "Expand previous word \"dynamically\".");
 
 // Caret mode
