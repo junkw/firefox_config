@@ -266,6 +266,26 @@ key.setGlobalKey(["C-x", "C-b"], function (ev, arg) {
     ext.exec("tanything", arg);
 }, "View all tabs", true);
 
+key.setViewKey(['C-z', 'l'], function (ev, arg) {
+    ext.exec('tabgroup-list', arg, ev);
+}, 'Show tab group list', true);
+
+key.setViewKey(['C-z', 'n'], function (ev, arg) {
+    ext.exec('tabgroup-next', arg, ev);
+}, 'Next tab group');
+
+key.setViewKey(['C-z', 'p'], function (ev, arg) {
+    ext.exec('tabgroup-prev', arg, ev);
+}, 'Previous tab group');
+
+key.setViewKey(['C-z', 'c'], function (ev, arg) {
+    ext.exec('tabgroup-create', arg, ev);
+}, 'Create new tab group', true);
+
+key.setViewKey(['C-z', 'k'], function (ev, arg) {
+    ext.exec('tabgroup-close', arg, ev);
+}, 'Close current tab group', true);
+
 // View mode
 key.setViewKey([['C-n'], ['j']], function (ev) {
     key.generateKey(ev.originalTarget, KeyEvent.DOM_VK_DOWN, true);

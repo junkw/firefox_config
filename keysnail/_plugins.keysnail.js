@@ -144,6 +144,15 @@ plugins.options["K2Emacs.ext"]    = "txt";
 plugins.options["K2Emacs.encode"] = "UTF-8";
 plugins.options["K2Emacs.sep"]    = "/";
 
+// Tabgroup Controller
+plugins.options['tabgroup.keymap'] = util.extendDefaultKeymap({
+    "s" : "select",
+    "c" : "create",
+    "q" : "close",
+    "r" : "edit-title",
+    "g" : "move-tab-to",
+});
+
 // Tanything
 plugins.options["tanything_opt.keymap"] = util.extendDefaultKeymap({
     "o" : "localOpen",

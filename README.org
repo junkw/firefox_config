@@ -41,6 +41,7 @@
 	- [[https://github.com/mooz/keysnail/raw/master/plugins/_scrollet.ks.js][Scrollet!]]
 	- [[https://github.com/mooz/keysnail/raw/master/plugins/set-mac.ks.js][Set Mac]]
 	- [[https://github.com/mooz/keysnail/raw/master/plugins/site-local-keymap.ks.js][Site local keymap]]
+	- [[https://raw.github.com/gist/3630309/tabgroup.ks.js][Tabgroup Controller]]
 	- [[https://github.com/myuhe/KeySnail_Plugin/raw/master/Tanything.ks.js][Tanything]]
 	- [[https://raw.github.com/gist/1286784/user-script-manager-ks.js][User script manager]] (need to rename 'user-script-manager.ks.js')
 

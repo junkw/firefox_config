@@ -24,6 +24,7 @@ ext.add("auto-install-plugins", function(ev, arg) {
         "https://gist.github.com/raw/895703/RILnail.ks.js",
         "https://github.com/mooz/keysnail/raw/master/plugins/_scrollet.ks.js",
         "https://github.com/mooz/keysnail/raw/master/plugins/site-local-keymap.ks.js",
+        "https://raw.github.com/gist/3630309/tabgroup.ks.js",
         "https://github.com/myuhe/KeySnail_Plugin/raw/master/Tanything.ks.js",
         "https://raw.github.com/gist/1286784/user-script-manager-ks.js"
     ];
