@@ -51,16 +51,14 @@ util.extendDefaultKeymap = function(keymap) {
 // @see https://github.com/958/my-keysnail-setting/blob/master/.keysnail.js
 (function() {
     try {
-        userscript.addLoadPath(util.getExtensionLocalDirectoryRoot().path);
         util.readDirectory(util.getExtensionLocalDirectoryRoot(), true)
-            .filter(function (file) !(file.leafName.match("^\\.\\.keysnail\\.js$") ||
-                                      !file.leafName.match("\\.keysnail\\.js$") ||
+            .filter(function (file) !(/^\.keysnail\.js$/i.test(file.leafName) ||
+                                      !/\.keysnail\.js$/i.test(file.leafName) ||
                                       file.isDirectory()))
-            .map(function (file) file.leafName)
             .sort()
             .forEach(function (file) {
-                util.message('Load sub setting files: ' + file);
-                userscript.require(file);
+                util.message("Load Keysnail init files: " + file.leafName);
+                userscript.loadSubScript(file.path, modules, true);
             });
     } catch (ex) { }
 })();
@@ -261,10 +259,10 @@ key.setGlobalKey('C-M-h', function (ev) {
     getBrowser().mTabContainer.advanceSelectedTab(-1, true);
 }, 'Select previous tab');
 
-key.setGlobalKey(["C-x", "C-b"], function (ev, arg) {
+key.setGlobalKey(['C-x', 'C-b'], function (ev, arg) {
     command.closeFindBar();
     ext.exec("tanything", arg);
-}, "View all tabs", true);
+}, 'View all tabs', true);
 
 key.setViewKey(['C-z', 'l'], function (ev, arg) {
     ext.exec('tabgroup-list', arg, ev);
@@ -333,12 +331,12 @@ key.setViewKey('%', function (ev, arg) {
 
 key.setViewKey([['C-x', 'r', 'SPC'], ['m']], function (ev, arg) {
     ext.exec("scrollet-set-mark", arg, ev);
-}, "Save current scroll / caret position to the mark", true);
+}, 'Save current scroll / caret position to the mark', true);
 
 key.setViewKey([['C-x', 'r', 'j'], ['\'']], function (ev, arg) {
     command.closeFindBar();
     ext.exec("scrollet-jump-to-mark", arg, ev);
-}, "Jump to the saved position", true);
+}, 'Jump to the saved position', true);
 
 // @see http://lab.designsatellites.jp/?p=1499
 key.setViewKey(['C-c', 'd', 'u'], function () {
@@ -473,27 +471,27 @@ key.setViewKey(['C-c', 'b', 'l'], function (ev, arg) {
 key.setViewKey(['C-c', 'b', 'L'], function (ev, arg) {
     command.closeFindBar();
     ext.exec("bmany-list-bookmarklets", arg, ev);
-}, "bmany - List all bookmarklets", true);
+}, 'bmany - List all bookmarklets', true);
 
 key.setViewKey(['C-c', 'b', 'k'], function (ev, arg) {
     command.closeFindBar();
     ext.exec("bmany-list-bookmarks-with-keyword", arg, ev);
-}, "bmany - List bookmarks with keyword", true);
+}, 'bmany - List bookmarks with keyword', true);
 
 key.setViewKey(['C-c', 'b', 't'], function (ev, arg) {
     command.closeFindBar();
     ext.exec("bmany-list-bookmarks-with-tag", arg, ev);
-}, "bmany - List bookmarks with tag", true);
+}, 'bmany - List bookmarks with tag', true);
 
 key.setViewKey(['C-c', 'r', 'l'], function (ev, arg) {
     command.closeFindBar();
     ext.exec("ril-show-reading-list", arg, ev);
-}, "RIL - Show reading list", true);
+}, 'RIL - Show reading list', true);
 
 key.setViewKey(['C-c', 'r', 'm'], function (ev, arg) {
     ext.exec("ril-toggle", arg, ev);
     BrowserCloseTabOrWindow();
-}, "RIL - Append or remove current tab", true);
+}, 'RIL - Append or remove current tab', true);
 
 key.setViewKey(':', function (ev, arg) {
     try {
@@ -512,7 +510,7 @@ key.setViewKey('C', function (ev, arg) {
 // Edit mode
 key.setEditKey(["C-c", "C-e"], function (ev, arg) {
     ext.exec("edit_text", arg, ev);
-}, "Edit with Emacs", true);
+}, 'Edit with Emacs', true);
 
 key.setEditKey(['C-x', 'h'], function (ev) {
     command.selectAll(ev);
@@ -677,7 +675,7 @@ key.setEditKey('M-p', function (ev) {
 
 key.setEditKey(plugins.options["dabbrev.next_key"], function (ev, arg) {
     ext.exec("dabbrev-expand-with-suggestions", arg, ev);
-}, "Expand previous word \"dynamically\".");
+}, 'Expand previous word \"dynamically\".');
 
 // Caret mode
 key.setCaretKey([['C-a'], ['^']], function (ev) {
