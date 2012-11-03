@@ -44,16 +44,7 @@
 }
 
 /* Hide Add-on's items in context menu */
-#RIL_context_saveLink,               /* Read It Later */
-#RIL_context_savePage,
-#RIL_context_clickMode,
-/* #RIL_context_saveTabs, */
-#readable_by_evernote__context_menu, /* Clearly */
-#webclipper-contextmenu-sep,         /* Evernote*/
-#webclipper3-contextmenu-item,
-#webclipper3-contextmenu,
-#webclipper3-contextmenu + menuseparator,
-#cloudmagic-display-menuitem         /* CloudMagic */
+#RIL_context_clickMode          /* Read It Later */
 {
     display: none!important;
 }
