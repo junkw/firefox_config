@@ -25,3 +25,6 @@ user_pref("browser.tabs.tabMinWidth", 100);
 
 // Don't move and resize window
 user_pref("dom.disable_window_move_resize", true);
+
+// Enable PDF.js
+user_pref("pdfjs.disabled", false);
