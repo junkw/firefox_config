@@ -293,6 +293,43 @@ ext.add("imenu-headline", function() {
     });
 }, "imenu on the current page headline", true);
 
+// Show link list
+// @see http://d.hatena.ne.jp/sr10/20120607/1339063026
+ext.add("list-link", function(){
+    var urls = [];
+    var aa = window.content.document.getElementsByTagName("a");
+    var text = "";
+    var alt = "";
+
+    for (var i = 0; i < aa.length ; i++) {
+        if(aa[i].href == ""){ continue; }
+
+        if (aa[i].text == "" && aa[i].hasChildNodes() && aa[i].childNodes[0].nodeType == Node.ELEMENT_NODE){
+            alt = aa[i].childNodes[0].getAttribute("alt");
+            text = " " + aa[i].childNodes[0].nodeName + (alt ? ": " + alt : "");
+        }else{
+            text = aa[i].text;
+        }
+
+        urls.push([text, decodeURIComponent(aa[i].href)]);
+    }
+
+    if(urls.length == 0){
+        display.echoStatusBar("Link not found.");
+    }else{
+        prompt.selector({
+            message    : "Select Link: ",
+            collection : urls,
+            width      : [35, 65],
+            header     : ["text", "url"],
+            callback   : function (i) {
+                if (i >= 0)
+                    openUILinkIn(urls[i][1], "tab"); // or current tabshifted window
+            }
+        });
+    }
+}, "Show link list on the current page");
+
 // View current page source
 ext.add("view-page-source", function() {
     openUILinkIn('view-source:' + content.location.href, 'tab');
