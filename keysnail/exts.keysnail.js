@@ -142,6 +142,11 @@ ext.add("describe-key", function(ev, arg) {
     window.addEventListener("keypress", handleKeyPress, true);
 }, "Describe key");
 
+// Firefox Add-on Manager
+ext.add("open-firefox-addon-manager", function() {
+    BrowserOpenAddonsMgr();
+}, "Open Firefox Add-on Manager");
+
 // Firefox Sync
 ext.add("sync-firefox-data", function() {
     window.gSyncUI.doSync();
@@ -238,7 +243,7 @@ ext.add("imenu-headline", function() {
         "h2",
         "h3",
         "h4",
-        "h5"        
+        "h5"
     ].join(",");
 
     let elements = Array.slice(content.document.querySelectorAll(anchorSelector));
