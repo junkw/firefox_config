@@ -3,7 +3,7 @@
 * My Firefox's config files
 ** System
 *** OS
-	- MacOS X Lion
+	- Mac OS X Mountain Lion
 
 *** Firefox Add-ons
 	- [[https://addons.mozilla.org/ja/firefox/collections/junkw/b51a7725-67ad-8840-5498-eeefe9/]]
@@ -12,6 +12,7 @@
 *** Scriptsh (Greasemonkey) scripts
 	- [[http://userscripts.org/scripts/show/50324][AccessKey Remover]]
 	- [[http://userscripts.org/scripts/show/62909][Fix HootSuite for Greasemonkey]]
+	- [[https://github.com/skratchdot/github-code-search.user.js][Github Code Search]]
 	- [[https://github.com/linyows/github-wiki-search][Github Wiki Search]]
 	- [[http://userscripts.org/scripts/show/17869][Gmail Fixed Font]]
 	- [[http://userscripts.org/scripts/show/26426][Gmail Template Switcher]]
