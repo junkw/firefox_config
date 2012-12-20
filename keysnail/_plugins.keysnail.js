@@ -1,5 +1,3 @@
-// -*- mode: js2; coding: utf-8; indent-tabs-mode: nil -*-
-
 // Site local keymap
 var local = {};
 plugins.options["site_local_keymap.local_keymap"] = local;
@@ -222,3 +220,9 @@ plugins.options["user_script_manager.keymap"] = util.extendDefaultKeymap({
     'O' : 'option',
     "M" : "open-sciprt-manager"
 });
+
+// Local Variables:
+// mode: js2
+// coding: utf-8
+// indent-tabs-mode: nil
+// End:

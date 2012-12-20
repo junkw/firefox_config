@@ -1,5 +1,3 @@
-// -*- mode: js2; coding: utf-8; indent-tabs-mode: nil -*-
-
 // ========================== KeySnail Init File =========================== //
 
 // ============================ PRESERVE area ============================== //
@@ -793,3 +791,9 @@ key.setCaretKey(':', function (ev, arg) {
 key.setCaretKey([['ESC'], ['q']], function (ev, arg) {
     util.setBoolPref("accessibility.browsewithcaret", !util.getBoolPref("accessibility.browsewithcaret"));
 }, 'Escape from caret mode', true);
+
+// Local Variables:
+// mode: js2
+// coding: utf-8
+// indent-tabs-mode: nil
+// End:

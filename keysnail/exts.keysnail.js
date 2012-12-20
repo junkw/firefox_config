@@ -1,5 +1,3 @@
-// -*- mode: js2; coding: utf-8; indent-tabs-mode: nil -*-
-
 // Auto install plugins
 // @see http://d.hatena.ne.jp/sr10/20120109/1326108732
 ext.add("auto-install-plugins", function(ev, arg) {
@@ -487,3 +485,9 @@ ext.add("search-with-suggest", function(ev, arg) {
         }
     });
 }, "Search with suggest");
+
+// Local Variables:
+// mode: js2
+// coding: utf-8
+// indent-tabs-mode: nil
+// End:

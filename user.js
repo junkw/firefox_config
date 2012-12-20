@@ -1,5 +1,3 @@
-// -*- mode: js2; coding: utf-8; indent-tabs-mode: nil -*-
-
 // Auto-assignment on memory cache
 user_pref("browser.cache.memory.capacity", -1);
 
@@ -28,3 +26,9 @@ user_pref("dom.disable_window_move_resize", true);
 
 // Enable PDF.js
 user_pref("pdfjs.disabled", false);
+
+// Local Variables:
+// mode: js2
+// coding: utf-8
+// indent-tabs-mode: nil
+// End:

@@ -1,5 +1,3 @@
-/* -*- mode: css; coding: utf-8; indent-tabs-mode: nil -*- */
-
 @charset "utf-8";
 @namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul");
 
@@ -61,3 +59,9 @@
 #editBMPanel_tagsSelector[collapsed="true"] {
     display:none !important;
 }
+
+/* Local Variables: */
+/* mode: css */
+/* coding: utf-8 */
+/* indent-tabs-mode: nil */
+/* End: */
