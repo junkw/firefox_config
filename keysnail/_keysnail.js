@@ -675,6 +675,14 @@ key.setEditKey(plugins.options["dabbrev.next_key"], function (ev, arg) {
     ext.exec("dabbrev-expand-with-suggestions", arg, ev);
 }, 'Expand previous word \"dynamically\".');
 
+key.setEditKey([["M-%"], ["ESC", "%"]], function (ev) {
+    ext.exec("query-replace", null, ev);
+});
+
+key.setEditKey([["C-M-%"], ["ESC", "C-%"]], function (ev) {
+    ext.exec("query-replace-regexp", null, ev);
+});
+
 // Caret mode
 key.setCaretKey([['C-a'], ['^']], function (ev) {
     ev.target.ksMarked ? goDoCommand("cmd_selectBeginLine") : goDoCommand("cmd_beginLine");

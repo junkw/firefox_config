@@ -38,6 +38,7 @@
 	- [[https://raw.github.com/gist/992351/hok-ex.ks.js][Hok Ex]]
 	- [[https://github.com/myuhe/KeySnail_Plugin/raw/master/K2Emacs.ks.js][K2Emacs]]
 	- [[https://raw.github.com/gist/1369730/ldrnail.ks.js][LDRnail]]
+	- [[https://raw.github.com/mooz/keysnail/master/plugins/query-replace.ks.js][query-replace]]
 	- [[https://gist.github.com/raw/895703/RILnail.ks.js][RILnail]]
 	- [[https://github.com/mooz/keysnail/raw/master/plugins/_scrollet.ks.js][Scrollet!]]
 	- [[https://github.com/mooz/keysnail/raw/master/plugins/set-mac.ks.js][Set Mac]]
