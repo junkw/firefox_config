@@ -36,7 +36,7 @@ local["^https?://www.google.(com|co.jp)/reader/view/"] = [
     pass(["g", "T"]), pass(["g", "d"]), pass(["g", "e"]), pass(["g", "p"]),
     // application
     ["r", null], ["f", null], ["u", null], ["1", null], ["2", null],
-    ["/", null], ["a", null], ["=", null], ["-", null]
+    ["/", null], ["a", null], ["=", null], ["-", null],
     // acting on items
     ["s", null], ["t", null], ["e", null], ["S", null], ["d", null],
     ["v", null], ["o", null], ["RET", null], ["m", null], ["A", null],
@@ -58,10 +58,18 @@ local["^https?://www.google.com/calendar/"] = [
 ];
 local["^https://github.com/"] = [
     ["s", null], ["?", null], ["t", null], ["l", null], ["w", null],
-    ["y", null], ["c", null], ["o", null], ["RET", null], ["x", null]
+    ["y", null], ["c", null], ["o", null], ["RET", null], ["x", null],
     ["i", null], ["I", null], ["u", null], ["U", null], ["e", null],
     ["/", null], ["h", null], ["H", null], ["j", null], ["J", null],
     ["k", null], ["K", null], ["l", null], ["L", null]
+];
+local["^https?://www.feedly.com/"] = [
+    // Navigation
+    pass(["g", "m"]), pass(["g", "a"]), pass(["g", "g"]), ["r", null],
+    // Lists
+    ["j", null], ["k", null], ["n", null], ["p", null], ["o", null], ["v", null],
+    // Selected Article
+    ["m", null], ["x", null], ["s", null], ["e", null], ["t", null]
 ];
 
 // LDRnail
