@@ -10,15 +10,6 @@
 command.kill.killRingMax   = 20;
 command.kill.textLengthMax = -1;
 
-// Disable IME in the prompt
-// @see https://gist.github.com/304619
-for each (let id in ["keysnail-prompt-textbox", "urlbar"]) {
-    let box = document.getElementById(id);
-    let input = document.getAnonymousElementByAttribute(box, 'anonid', 'input');
-    if (input)
-        input.style.imeMode = "inactive";
-}
-
 // default keymap in the prompt
 util.extendDefaultKeymap = function(keymap) {
     let defaultKeymap = {

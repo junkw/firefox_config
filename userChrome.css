@@ -1,8 +1,12 @@
 @charset "utf-8";
 @namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul");
 
-/* Disable IME mode in location bar */
-#urlbar *|input { ime-mode: inactive !important; }
+/* Disable IME mode in the location bar and Keysnails prompt */
+#urlbar *|input,
+#keysnail-prompt-textbox *|input
+{
+    ime-mode: inactive !important;
+}
 
 /* Translucent context menu */
 #PopupAutoCompleteRichResult[type="autocomplete-richlistbox"] {
