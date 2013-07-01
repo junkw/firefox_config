@@ -27,23 +27,6 @@ local["^https?://mail.google.com/mail/"] = [
     ["U", null], ["_", null], ["C-s", null], ["+", null], ["=", null],
     ["-", null], ["h", null], ["T", null]
 ];
-local["^https?://www.google.(com|co.jp)/reader/view/"] = [
-    // navigation
-    ["j", null], ["k", null], ["SPC", null], ["S-SPC", null], ["n", null],
-    ["p", null], ["N", null], ["P", null], ["X", null], ["O", null],
-    // jumping
-    pass(["g", "h"]), pass(["g", "a"]), pass(["g", "s"]), pass(["g", "u"]), pass(["g", "t"]),
-    pass(["g", "T"]), pass(["g", "d"]), pass(["g", "e"]), pass(["g", "p"]),
-    // application
-    ["r", null], ["f", null], ["u", null], ["1", null], ["2", null],
-    ["/", null], ["a", null], ["=", null], ["-", null],
-    // acting on items
-    ["s", null], ["t", null], ["e", null], ["S", null], ["d", null],
-    ["v", null], ["o", null], ["RET", null], ["m", null], ["A", null],
-    ["T", null],
-    // add-on, user-script
-    ["@", null], ["i", null], ["z", null]
-];
 local["^https?://www.google.com/calendar/"] = [
     // navigation
     ["j", null], ["k", null], ["n", null], ["p", null], ["t", null],

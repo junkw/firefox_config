@@ -16,8 +16,6 @@
 	- [[https://github.com/linyows/github-wiki-search][Github Wiki Search]]
 	- [[http://userscripts.org/scripts/show/43538][Gmail MonoSpace Font]]
 	- [[http://userscripts.org/scripts/show/77648][Google Calendar - Weekend coloration - FR]]
-	- [[http://userscripts.org/scripts/show/78351][Google Reader Full Feed Mod]]
-	- [[http://userscripts.org/scripts/show/17714][Pin Extension for Google Reader]]
 
 *** Keysnail plugins
 	- [[https://raw.github.com/gist/1000062/append_anchor.ks.js][Append Anchor]]
