@@ -86,7 +86,7 @@ plugins.options["ldrnail.pinned_list_actions"] = [
          if (link)
              openUILinkIn(link, 'tabshifted');
      },
-     "Open link in background tab", "open,c",
+     "Open link in background tab", "open,c"
     ],
 
     [function(aIndex) {
@@ -98,8 +98,8 @@ plugins.options["ldrnail.pinned_list_actions"] = [
          if (elem)
              elem.scrollIntoView(true);
      },
-     "Scroll to this item", "scroll,c",
-    ],
+     "Scroll to this item", "scroll,c"
+    ]
 ];
 
 plugins.options["ldrnail.pinned_list_keymap"] = {
@@ -143,7 +143,7 @@ plugins.options['tabgroup.keymap'] = util.extendDefaultKeymap({
     "c" : "create",
     "q" : "close",
     "r" : "edit-title",
-    "g" : "move-tab-to",
+    "g" : "move-tab-to"
 });
 
 // Tanything
