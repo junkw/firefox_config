@@ -46,13 +46,17 @@ local["^https://github.com/"] = [
     ["/", null], ["h", null], ["H", null], ["j", null], ["J", null],
     ["k", null], ["K", null], ["l", null], ["L", null]
 ];
-local["^https?://www.feedly.com/"] = [
+local["^https?://cloud.feedly.com/"] = [
+    ["?", null],
     // Navigation
-    pass(["g", "m"]), pass(["g", "a"]), pass(["g", "g"]), ["r", null],
+    pass(["g", "m"]), pass(["g", "a"]), pass(["g", "g"]), pass(["g", "l"]),
+    ["J", null], ["K", null], ["a", null], ["r", null],
     // Lists
-    ["j", null], ["k", null], ["n", null], ["p", null], ["o", null], ["v", null],
+    ["j", null], ["k", null], ["n", null], ["p", null], ["o", null],
+    ["v", null], ["A", null],
     // Selected Article
-    ["m", null], ["x", null], ["s", null], ["e", null], ["t", null]
+    ["m", null], ["x", null], ["s", null], ["e", null], ["b", null],
+    ["V", null]
 ];
 
 // LDRnail
