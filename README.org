@@ -11,7 +11,7 @@
 
 *** Scriptsh (Greasemonkey) scripts
 	- [[http://userscripts.org/scripts/show/50324][AccessKey Remover]]
-	- [[http://userscripts.org/scripts/show/62909][Fix HootSuite for Greasemonkey]]
+	- [[http://userscripts.org/scripts/show/171868][Feedly Full Feed]]
 	- [[https://github.com/skratchdot/github-code-search.user.js][Github Code Search]]
 	- [[https://github.com/linyows/github-wiki-search][Github Wiki Search]]
 	- [[http://userscripts.org/scripts/show/43538][Gmail MonoSpace Font]]
