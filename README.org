@@ -18,31 +18,31 @@
 	- [[http://userscripts.org/scripts/show/77648][Google Calendar - Weekend coloration - FR]]
 
 *** Keysnail plugins
-	- [[https://raw.github.com/gist/1000062/append_anchor.ks.js][Append Anchor]]
-	- [[https://github.com/mooz/keysnail/raw/master/plugins/bmany.ks.js][bmany]]
-	- [[https://raw.github.com/gist/1286792/bookmarktag.ks.js][Bookmark tag]]
-	- [[https://github.com/mooz/keysnail/raw/master/plugins/builtin-commands-ext.ks.js][Builtin command as Ext]]
-	- [[https://github.com/mooz/keysnail/raw/master/plugins/caret-hint.ks.js][Caret hint]]
-	- [[https://raw.github.com/gist/1312071/cookie-manager.ks.js][Cookie Manager]]
-	- [[https://raw.github.com/gist/1031072/encoding-switcher.js][Encoding switcher]] (need to rename 'encoding-switcher.ks.js')
+	- [[https://gist.github.com/958/1000062/raw/append_anchor.ks.js][Append Anchor]]
+	- [[https://raw.github.com/mooz/keysnail/master/plugins/bmany.ks.js][bmany]]
+	- [[https://gist.github.com/958/1286792/raw/bookmarktag.ks.js][Bookmark tag]]
+	- [[https://raw.github.com/mooz/keysnail/master/plugins/builtin-commands-ext.ks.js][Builtin command as Ext]]
+	- [[https://raw.github.com/mooz/keysnail/master/plugins/caret-hint.ks.js][Caret hint]]
+	- [[https://gist.github.com/958/1312071/raw/cookie-manager.ks.js][Cookie Manager]]
+	- [[https://gist.github.com/958/1031072/raw/encoding-switcher.js][Encoding switcher]] (need to rename 'encoding-switcher.ks.js')
 	- [[https://raw.github.com/mooz/keysnail/master/plugins/dabbrev.ks.js][Expander]]
 	- [[https://gist.github.com/raw/905297/find.ks.js][Find]]
-	- [[https://raw.github.com/gist/1011984/firefox-addon-manager.ks.js][Firefox addon manager]]
-	- [[https://raw.github.com/gist/1011926/firefox-plugin-manager.ks.js][Firefox plugin manager]]
-	- [[https://github.com/mooz/keysnail/raw/master/plugins/github-plugin.ks.js][github helper]]
+	- [[https://gist.github.com/958/1011984/raw/firefox-addon-manager.ks.js][Firefox addon manager]]
+	- [[https://gist.github.com/958/1011926/raw/firefox-plugin-manager.ks.js][Firefox plugin manager]]
+	- [[https://raw.github.com/mooz/keysnail/master/plugins/github-plugin.ks.js][github helper]]
 	- [[https://gist.github.com/raw/895953/history.ks.js][History]]
-	- [[https://github.com/mooz/keysnail/raw/master/plugins/hok.ks.js][Hok]]
-	- [[https://raw.github.com/gist/992351/hok-ex.ks.js][Hok Ex]]
-	- [[https://github.com/myuhe/KeySnail_Plugin/raw/master/K2Emacs.ks.js][K2Emacs]]
-	- [[https://raw.github.com/gist/1369730/ldrnail.ks.js][LDRnail]]
+	- [[https://raw.github.com/mooz/keysnail/master/plugins/hok.ks.js][Hok]]
+	- [[https://gist.github.com/958/992351/raw/hok-ex.ks.js][Hok Ex]]
+	- [[https://raw.github.com/myuhe/KeySnail_Plugin/master/K2Emacs.ks.js][K2Emacs]]
+	- [[https://gist.github.com/958/1369730/raw/ldrnail.ks.js][LDRnail]]
 	- [[https://raw.github.com/mooz/keysnail/master/plugins/query-replace.ks.js][query-replace]]
 	- [[https://gist.github.com/raw/895703/RILnail.ks.js][RILnail]]
-	- [[https://github.com/mooz/keysnail/raw/master/plugins/_scrollet.ks.js][Scrollet!]]
-	- [[https://github.com/mooz/keysnail/raw/master/plugins/set-mac.ks.js][Set Mac]]
-	- [[https://github.com/mooz/keysnail/raw/master/plugins/site-local-keymap.ks.js][Site local keymap]]
-	- [[https://raw.github.com/gist/3630309/tabgroup.ks.js][Tabgroup Controller]]
-	- [[https://github.com/myuhe/KeySnail_Plugin/raw/master/Tanything.ks.js][Tanything]]
-	- [[https://raw.github.com/gist/1286784/user-script-manager-ks.js][User script manager]] (need to rename 'user-script-manager.ks.js')
+	- [[https://raw.github.com/mooz/keysnail/master/plugins/_scrollet.ks.js][Scrollet!]]
+	- [[https://raw.github.com/mooz/keysnail/master/plugins/set-mac.ks.js][Set Mac]]
+	- [[https://raw.github.com/mooz/keysnail/master/plugins/site-local-keymap.ks.js][Site local keymap]]
+	- [[https://gist.github.com/958/3630309/raw/tabgroup.ks.js][Tabgroup Controller]]
+	- [[https://raw.github.com/myuhe/KeySnail_Plugin/master/Tanything.ks.js][Tanything]]
+	- [[https://gist.github.com/958/1286784/raw/user-script-manager-ks.js][User script manager]] (need to rename 'user-script-manager.ks.js')
 
 ** Setup
 #+BEGIN_SRC sh-mode
