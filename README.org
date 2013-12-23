@@ -3,7 +3,7 @@
 * My Firefox's config files
 ** System
 *** OS
-	- Mac OS X Mountain Lion
+	Mac OS X Mavericks
 
 *** Firefox Add-ons
 	- [[https://addons.mozilla.org/ja/firefox/collections/junkw/b51a7725-67ad-8840-5498-eeefe9/][Collections]]
@@ -45,7 +45,7 @@
 	- [[https://gist.github.com/958/1286784/raw/user-script-manager-ks.js][User script manager]] (need to rename 'user-script-manager.ks.js')
 
 ** Setup
-#+BEGIN_SRC sh-mode
+#+BEGIN_SRC sh
 $ git clone https://github.com/junkw/firefox_config.git /path/to/local/repo/
 $ cd ~/Library/Application\ Support/Firefox/Profiles/PROFILE_DIRECTORY
 $ ln -s /path/to/local/repo/user.js .
@@ -55,6 +55,10 @@ $ mkdir ../keysnail && cd ../keysnail/
 $ ln -s /path/to/local/repo/keysnail/_plugins.keysnail.js .
 $ ln -s /path/to/local/repo/keysnail/exts.keysnail.js .
 $ ln -s /path/to/local/repo/keysnail/_keysnail.js ~/.keysnail.js
-#+END_SRC
 
-After Firefox is launched, execute =M-x auto-install-plugins=.
+# After Firefox is launched, execute M-x auto-install-plugins.
+
+$ cd plugins/
+$ mv encoding-switcher.js encoding-switcher.ks.js
+$ mv user-script-manager-ks.js user-script-manager.ks.js
+#+END_SRC
