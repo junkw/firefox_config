@@ -11,54 +11,41 @@
 
 *** Scriptsh (Greasemonkey) scripts
 	- [[http://userscripts.org/scripts/show/50324][AccessKey Remover]]
-	- [[http://userscripts.org/scripts/show/171868][Feedly Full Feed]]
 	- [[https://github.com/skratchdot/github-code-search.user.js][Github Code Search]]
 	- [[https://github.com/linyows/github-wiki-search][Github Wiki Search]]
 	- [[http://userscripts.org/scripts/show/43538][Gmail MonoSpace Font]]
 	- [[http://userscripts.org/scripts/show/77648][Google Calendar - Weekend coloration - FR]]
 
 *** Keysnail plugins
-	- [[https://gist.github.com/958/1000062/raw/append_anchor.ks.js][Append Anchor]]
+	- [[https://gist.githubusercontent.com/958/1000062/raw/append_anchor.ks.js][Append Anchor]]
 	- [[https://raw.github.com/mooz/keysnail/master/plugins/bmany.ks.js][bmany]]
-	- [[https://gist.github.com/958/1286792/raw/bookmarktag.ks.js][Bookmark tag]]
+	- [[https://gist.githubusercontent.com/958/1286792/raw/bookmarktag.ks.js][Bookmark tag]]
 	- [[https://raw.github.com/mooz/keysnail/master/plugins/builtin-commands-ext.ks.js][Builtin command as Ext]]
 	- [[https://raw.github.com/mooz/keysnail/master/plugins/caret-hint.ks.js][Caret hint]]
-	- [[https://gist.github.com/958/1312071/raw/cookie-manager.ks.js][Cookie Manager]]
-	- [[https://gist.github.com/958/1031072/raw/encoding-switcher.js][Encoding switcher]] (need to rename 'encoding-switcher.ks.js')
+	- [[https://gist.githubusercontent.com/958/1312071/raw/cookie-manager.ks.js][Cookie Manager]]
+	- [[https://gist.githubusercontent.com/958/1031072/raw/encoding-switcher.js][Encoding switcher]] (need to rename 'encoding-switcher.ks.js')
 	- [[https://raw.github.com/mooz/keysnail/master/plugins/dabbrev.ks.js][Expander]]
-	- [[https://gist.github.com/raw/905297/find.ks.js][Find]]
-	- [[https://gist.github.com/958/1011984/raw/firefox-addon-manager.ks.js][Firefox addon manager]]
-	- [[https://gist.github.com/958/1011926/raw/firefox-plugin-manager.ks.js][Firefox plugin manager]]
+	- [[https://gist.githubusercontent.com/raw/905297/find.ks.js][Find]]
+	- [[https://gist.githubusercontent.com/958/1011984/raw/firefox-addon-manager.ks.js][Firefox addon manager]]
+	- [[https://gist.githubusercontent.com/958/1011926/raw/firefox-plugin-manager.ks.js][Firefox plugin manager]]
 	- [[https://raw.github.com/mooz/keysnail/master/plugins/github-plugin.ks.js][github helper]]
-	- [[https://gist.github.com/raw/895953/history.ks.js][History]]
+	- [[https://gist.githubusercontent.com/raw/895953/history.ks.js][History]]
 	- [[https://raw.github.com/mooz/keysnail/master/plugins/hok.ks.js][Hok]]
-	- [[https://gist.github.com/958/992351/raw/hok-ex.ks.js][Hok Ex]]
+	- [[https://gist.githubusercontent.com/958/992351/raw/hok-ex.ks.js][Hok Ex]]
 	- [[https://raw.github.com/myuhe/KeySnail_Plugin/master/K2Emacs.ks.js][K2Emacs]]
-	- [[https://gist.github.com/958/1369730/raw/ldrnail.ks.js][LDRnail]]
+	- [[https://gist.githubusercontent.com/958/1369730/raw/ldrnail.ks.js][LDRnail]]
 	- [[https://raw.github.com/mooz/keysnail/master/plugins/query-replace.ks.js][query-replace]]
-	- [[https://gist.github.com/raw/895703/RILnail.ks.js][RILnail]]
+	- [[https://gist.githubusercontent.com/raw/895703/RILnail.ks.js][RILnail]]
 	- [[https://raw.github.com/mooz/keysnail/master/plugins/_scrollet.ks.js][Scrollet!]]
 	- [[https://raw.github.com/mooz/keysnail/master/plugins/set-mac.ks.js][Set Mac]]
 	- [[https://raw.github.com/mooz/keysnail/master/plugins/site-local-keymap.ks.js][Site local keymap]]
-	- [[https://gist.github.com/958/3630309/raw/tabgroup.ks.js][Tabgroup Controller]]
+	- [[https://gist.githubusercontent.com/958/3630309/raw/tabgroup.ks.js][Tabgroup Controller]]
 	- [[https://raw.github.com/myuhe/KeySnail_Plugin/master/Tanything.ks.js][Tanything]]
-	- [[https://gist.github.com/958/1286784/raw/user-script-manager-ks.js][User script manager]] (need to rename 'user-script-manager.ks.js')
+	- [[https://gist.githubusercontent.com/958/1286784/raw/user-script-manager-ks.js][User script manager]] (need to rename 'user-script-manager.ks.js')
 
 ** Setup
 #+BEGIN_SRC sh
 $ git clone https://github.com/junkw/firefox_config.git /path/to/local/repo/
-$ cd ~/Library/Application\ Support/Firefox/Profiles/PROFILE_DIRECTORY
-$ ln -s /path/to/local/repo/user.js .
-$ mkdir chrome && cd chrome/
-$ ln -s /path/to/local/repo/userChrome.css .
-$ mkdir ../keysnail && cd ../keysnail/
-$ ln -s /path/to/local/repo/keysnail/_plugins.keysnail.js .
-$ ln -s /path/to/local/repo/keysnail/exts.keysnail.js .
-$ ln -s /path/to/local/repo/keysnail/_keysnail.js ~/.keysnail.js
-
-# After Firefox is launched, execute M-x auto-install-plugins.
-
-$ cd plugins/
-$ mv encoding-switcher.js encoding-switcher.ks.js
-$ mv user-script-manager-ks.js user-script-manager.ks.js
+$ cd /path/to/local/repo/
+$ rake FIREFOX_PROFILE_DIR=~/Library/Application\ Support/Firefox/Profiles/PROFILE_DIRECTORY
 #+END_SRC
