@@ -3,7 +3,7 @@
 * My Firefox's config files
 ** System
 *** OS
-	Mac OS X Mavericks
+	Mac OS X Yosemite
 
 *** Firefox Add-ons
 	- [[https://addons.mozilla.org/ja/firefox/collections/junkw/b51a7725-67ad-8840-5498-eeefe9/][Collections]]
@@ -44,8 +44,9 @@
 	- [[https://gist.githubusercontent.com/958/1286784/raw/user-script-manager-ks.js][User script manager]] (need to rename 'user-script-manager.ks.js')
 
 ** Setup
+
 #+BEGIN_SRC sh
-$ git clone https://github.com/junkw/firefox_config.git /path/to/local/repo/
-$ cd /path/to/local/repo/
-$ rake FIREFOX_PROFILE_DIR=~/Library/Application\ Support/Firefox/Profiles/PROFILE_DIRECTORY
+git clone https://github.com/junkw/firefox_config.git /path/to/local/repo/
+cd /path/to/local/repo/
+rake FIREFOX_PROFILE_DIR=~/Library/Application\ Support/Firefox/Profiles/PROFILE_DIRECTORY
 #+END_SRC
