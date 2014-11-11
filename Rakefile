@@ -1,20 +1,30 @@
 # -*- mode: ruby; coding: utf-8; indent-tabs-mode: nil -*-
+require 'pathname'
+require 'fileutils'
 
 
-profile_dir = ENV["FIREFOX_PROFILE_DIR"]
+
+profile_dir = Pathname(ENV["FIREFOX_PROFILE_DIR"])
+chrome_dir = profile_dir + "chrome"
+keysnail_dir = profile_dir + "keysnail"
+keysnail_plugin_dir = profile_dir + "keysnail/plugins"
+
 
 task :make_dir do
-  sh "mkdir -p #{profile_dir}/chrome #{profile_dir}/keysnail #{profile_dir}/keysnail/plugins"
+  FileUtils.mkdir(chrome_dir)
+  FileUtils.mkdir_p(keysnail_plugin_dir)
 end
 
 task :link do
-  sh "ln -s #{Dir.pwd}/keysnail/_keysnail.js ~/.keysnail.js"
-  sh "ln -s #{Dir.pwd}/keysnail/_plugins.keysnail.js #{profile_dir}/keysnail/"
-  sh "ln -s #{Dir.pwd}/keysnail/exts.keysnail.js #{profile_dir}/keysnail/"
+  FileUtils.ln_sf("#{Dir.pwd}/keysnail/_keysnail.js", "#{Dir.home}/keysnail.js")
+  FileUtils.ln_sf("#{Dir.pwd}/keysnail/_plugins.keysnail.js", keysnail_dir)
+  FileUtils.ln_sf("#{Dir.pwd}/keysnail/exts.keysnail.js", keysnail_dir)
+  FileUtils.ln_sf("#{Dir.pwd}/user.js", profile_dir)
+  FileUtils.ln_sf("#{Dir.pwd}/userChrome.css", chrome_dir)
 end
 
 task :install_keysnail_plugins do
-  cd "#{profile_dir}/keysnail/plugins/" do
+  cd keysnail_plugin_dir do
     sh "curl -sfLO https://gist.githubusercontent.com/958/1000062/raw/append_anchor.ks.js"
     sh "curl -sfLO https://raw.github.com/mooz/keysnail/master/plugins/bmany.ks.js"
     sh "curl -sfLO https://gist.githubusercontent.com/958/1286792/raw/bookmarktag.ks.js"
