@@ -16,7 +16,7 @@ task :make_dir do
 end
 
 task :link do
-  FileUtils.ln_sf("#{Dir.pwd}/keysnail/_keysnail.js", "#{Dir.home}/keysnail.js")
+  FileUtils.ln_sf("#{Dir.pwd}/keysnail/_keysnail.js", "#{Dir.home}/.keysnail.js")
   FileUtils.ln_sf("#{Dir.pwd}/keysnail/_plugins.keysnail.js", keysnail_dir)
   FileUtils.ln_sf("#{Dir.pwd}/keysnail/exts.keysnail.js", keysnail_dir)
   FileUtils.ln_sf("#{Dir.pwd}/user.js", profile_dir)
