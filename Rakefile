@@ -31,7 +31,7 @@ task :install_keysnail_plugins do
     sh "curl -sfLO https://raw.github.com/mooz/keysnail/master/plugins/builtin-commands-ext.ks.js"
     sh "curl -sfLO https://raw.github.com/mooz/keysnail/master/plugins/caret-hint.ks.js"
     sh "curl -sfLO https://gist.githubusercontent.com/958/1312071/raw/cookie-manager.ks.js"
-    sh "curl -sfL https://gist.githubusercontent.com/958/1031072/raw/encoding-switcher.js -o encoding-switcher.js"
+    sh "curl -sfL https://gist.githubusercontent.com/958/1031072/raw/encoding-switcher.js -o encoding-switcher.ks.js"
     sh "curl -sfLO https://raw.github.com/mooz/keysnail/master/plugins/dabbrev.ks.js"
     sh "curl -sfLO https://gist.githubusercontent.com/raw/905297/find.ks.js -o find.ks.js"
     sh "curl -sfLO https://gist.githubusercontent.com/958/1011984/raw/firefox-addon-manager.ks.js"
