@@ -12,11 +12,9 @@
 	- [[https://github.com/mooz/keysnail][Keysnail]]
 
 *** Scriptsh (Greasemonkey) scripts
-	- [[http://userscripts.org/scripts/show/50324][AccessKey Remover]]
-	- [[https://github.com/skratchdot/github-code-search.user.js][Github Code Search]]
+	- [[http://userscripts-mirror.org/scripts/show/50324][AccessKey Remover]]
 	- [[https://github.com/linyows/github-wiki-search][Github Wiki Search]]
-	- [[http://userscripts.org/scripts/show/43538][Gmail MonoSpace Font]]
-	- [[http://userscripts.org/scripts/show/77648][Google Calendar - Weekend coloration - FR]]
+	- [[http://userscripts-mirror.org/scripts/show/43538][Gmail MonoSpace Font]]
 
 *** Keysnail plugins
 	- [[https://gist.githubusercontent.com/958/1000062/raw/append_anchor.ks.js][Append Anchor]]
