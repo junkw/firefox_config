@@ -635,7 +635,9 @@ key.setEditKey('C-M-y', function (ev) {
         return;
     }
 
-    let(ct = command.getClipboardText())(!command.kill.ring.length || ct != command.kill.ring[0]) && command.pushKillRing(ct);
+    let (ct = command.getClipboardText()) {
+        (!command.kill.ring.length || ct != command.kill.ring[0]) && command.pushKillRing(ct);
+    }
 
     prompt.selector({
         message: "Paste:",
