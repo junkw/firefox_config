@@ -4,49 +4,13 @@
 
 ** Requirements
 
-*** OS
-	- Mac OS X Yosemite
-
-*** Firefox Add-ons
-	- [[https://addons.mozilla.org/ja/firefox/collections/junkw/b51a7725-67ad-8840-5498-eeefe9/][Collections]]
-	- [[https://github.com/mooz/keysnail][Keysnail]]
-
-*** Scriptsh (Greasemonkey) scripts
-	- [[http://userscripts-mirror.org/scripts/show/50324][AccessKey Remover]]
-	- [[https://github.com/linyows/github-wiki-search][Github Wiki Search]]
-	- [[http://userscripts-mirror.org/scripts/show/43538][Gmail MonoSpace Font]]
-
-*** Keysnail plugins
-	- [[https://gist.githubusercontent.com/958/1000062/raw/append_anchor.ks.js][Append Anchor]]
-	- [[https://raw.github.com/mooz/keysnail/master/plugins/bmany.ks.js][bmany]]
-	- [[https://gist.githubusercontent.com/958/1286792/raw/bookmarktag.ks.js][Bookmark tag]]
-	- [[https://raw.github.com/mooz/keysnail/master/plugins/builtin-commands-ext.ks.js][Builtin command as Ext]]
-	- [[https://raw.github.com/mooz/keysnail/master/plugins/caret-hint.ks.js][Caret hint]]
-	- [[https://gist.githubusercontent.com/958/1312071/raw/cookie-manager.ks.js][Cookie Manager]]
-	- [[https://gist.githubusercontent.com/958/1031072/raw/encoding-switcher.js][Encoding switcher]] (need to rename to 'encoding-switcher.ks.js')
-	- [[https://raw.github.com/mooz/keysnail/master/plugins/dabbrev.ks.js][Expander]]
-	- [[https://gist.githubusercontent.com/raw/905297/find.ks.js][Find]]
-	- [[https://gist.githubusercontent.com/958/1011984/raw/firefox-addon-manager.ks.js][Firefox addon manager]]
-	- [[https://gist.githubusercontent.com/958/1011926/raw/firefox-plugin-manager.ks.js][Firefox plugin manager]]
-	- [[https://raw.github.com/mooz/keysnail/master/plugins/github-plugin.ks.js][github helper]]
-	- [[https://gist.githubusercontent.com/raw/895953/history.ks.js][History]]
-	- [[https://raw.github.com/mooz/keysnail/master/plugins/hok.ks.js][Hok]]
-	- [[https://gist.githubusercontent.com/958/992351/raw/hok-ex.ks.js][Hok Ex]]
-	- [[https://raw.github.com/myuhe/KeySnail_Plugin/master/K2Emacs.ks.js][K2Emacs]]
-	- [[https://gist.githubusercontent.com/958/1369730/raw/ldrnail.ks.js][LDRnail]]
-	- [[https://raw.github.com/mooz/keysnail/master/plugins/query-replace.ks.js][query-replace]]
-	- [[https://gist.githubusercontent.com/raw/895703/RILnail.ks.js][RILnail]]
-	- [[https://raw.github.com/mooz/keysnail/master/plugins/_scrollet.ks.js][Scrollet!]]
-	- [[https://raw.github.com/mooz/keysnail/master/plugins/set-mac.ks.js][Set Mac]]
-	- [[https://raw.github.com/mooz/keysnail/master/plugins/site-local-keymap.ks.js][Site local keymap]]
-	- [[https://gist.githubusercontent.com/958/3630309/raw/tabgroup.ks.js][Tabgroup Controller]]
-	- [[https://raw.github.com/myuhe/KeySnail_Plugin/master/Tanything.ks.js][Tanything]]
-	- [[https://gist.githubusercontent.com/958/1286784/raw/user-script-manager-ks.js][User script manager]] (need to rename to 'user-script-manager.ks.js')
+   - Mac OS X El Capitan
+   - [[https://github.com/mooz/keysnail][Keysnail]]
 
 ** Installation
 
 #+BEGIN_SRC sh
 git clone https://github.com/junkw/firefox_config.git /path/to/local/repo/
 cd /path/to/local/repo/
-rake FIREFOX_PROFILE_DIR=~/Library/Application\ Support/Firefox/Profiles/PROFILE_DIRECTORY
+FIREFOX_PROFILE_DIR=~/Library/Application\ Support/Firefox/Profiles/PROFILE_DIRECTORY rake
 #+END_SRC
