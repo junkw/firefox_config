@@ -13,12 +13,17 @@
     opacity: 0.96 !important;
 }
 
-/* Hide items in context menu */
+
+/**
+ * Hide items in context menu
+ * @see chrome://browser/content/browser.xul
+ */
 #context-back,
 #context-forward,
 #context-reload,
 #context-stop,
-#context-sep-stop,             /* Line separator */
+#context-bookmarkpage,
+#context-sep-navigation,       /* Line separator */
 #context-sendpage,             /* Send page in an email */
 #context-sendlink,             /* Send a link in an email */
 #context-sendimage,            /* Send an image in a email */
@@ -34,25 +39,31 @@
 #context-inspect,              /* Inspect Element */
 #context-inspect + menuseparator
 {
-    display: none!important;
+    display: none !important;
 }
 
-/* Hide frame items in context menu */
+/* frame items in context menu */
 #context-printframe + menuseparator, /* Line separator */
 #context-viewframesource,            /* View Frame Source */
 #context-viewframeinfo               /* View Frame Info */
 {
-    display: none!important;
+    display: none !important;
 }
 
-/* Hide Add-on's items in context menu */
-#RIL_context_clickMode          /* Read It Later */
+/* Add-on's items in context menu */
+#scriptish-context-menu-install, /* Scriptish */
+#scriptish-context-menu-viewsource,
+#scriptish-context-menu-viewsource-sep,
+#readable_by_evernote__context_menu /* Clearly */
 {
-    display: none!important;
+    display: none !important;
 }
 
-/* Keyword addition for Add/Change Bookmark
- * @see http://userstyles.org/styles/9029/keyword-addition-for-add-change-bookmark-fx3 */
+
+/**
+ * Keyword addition for Add/Change Bookmark
+ * @see http://userstyles.org/styles/9029/keyword-addition-for-add-change-bookmark-fx3
+ */
 #editBMPanel_keywordRow,
 #editBMPanel_descriptionRow,
 #editBMPanel_locationRow,
