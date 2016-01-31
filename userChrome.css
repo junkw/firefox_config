@@ -1,64 +1,21 @@
 @charset "utf-8";
 @namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul");
 
-/* Disable IME mode in the location bar and Keysnails prompt */
+/**
+ *  Location bar
+ */
+
+/* Disable IME mode in Location bar and Keysnail prompt */
 #urlbar *|input,
 #keysnail-prompt-textbox *|input
 {
     ime-mode: inactive !important;
 }
 
-/* Translucent context menu */
+/* Translucent menu */
 #PopupAutoCompleteRichResult[type="autocomplete-richlistbox"] {
     opacity: 0.96 !important;
 }
-
-
-/**
- * Hide items in context menu
- * @see chrome://browser/content/browser.xul
- */
-#context-back,
-#context-forward,
-#context-reload,
-#context-stop,
-#context-bookmarkpage,
-#context-sep-navigation,       /* Line separator */
-#context-sendpage,             /* Send page in an email */
-#context-sendlink,             /* Send a link in an email */
-#context-sendimage,            /* Send an image in a email */
-#context-setDesktopBackground, /* Set an image as the desktop background */
-#context-blockimage,           /* Block an image */
-#context-viewbgimage,          /* View background image */
-#context-viewpartialsource-selection, /* View Selection Source */
-#context-viewpartialsource-mathml,    /* View MathML Source */
-#context-sep-viewsource,       /* Line separator */
-#context-viewsource,           /* View Page Source */
-#context-viewinfo,             /* View Page Info */
-#inspect-separator,            /* Line separator */
-#context-inspect,              /* Inspect Element */
-#context-inspect + menuseparator
-{
-    display: none !important;
-}
-
-/* frame items in context menu */
-#context-printframe + menuseparator, /* Line separator */
-#context-viewframesource,            /* View Frame Source */
-#context-viewframeinfo               /* View Frame Info */
-{
-    display: none !important;
-}
-
-/* Add-on's items in context menu */
-#scriptish-context-menu-install, /* Scriptish */
-#scriptish-context-menu-viewsource,
-#scriptish-context-menu-viewsource-sep,
-#readable_by_evernote__context_menu /* Clearly */
-{
-    display: none !important;
-}
-
 
 /**
  * Keyword addition for Add/Change Bookmark
