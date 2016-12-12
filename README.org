@@ -4,7 +4,7 @@
 
 ** Requirements
 
-   - Mac OS X El Capitan
+   - maOS Sierra
    - [[https://github.com/mooz/keysnail][Keysnail]]
 
 ** Installation
