@@ -354,25 +354,6 @@ ext.add("copy-page-info", function(ev, arg) {
     });
 }, "Copy current page info");
 
-// Copy feed of current page
-// @see http://keysnail.g.hatena.ne.jp/mooz/20100619/1276943161
-ext.add("copy-feed", function () {
-    const doc = content.document;
-
-    let feeds = [[e.getAttribute("title"), e.getAttribute("href")]
-                 for ([, e] in Iterator(doc.querySelectorAll(['link[type="application/rss+xml"]',
-                                                              'link[type="application/atom+xml"]'])))];
-
-    prompt.selector({
-        message    : "Select feed",
-        collection : feeds,
-        callback   : function (i) {
-            if (i >= 0)
-                command.setClipboardText(feeds[i][1]);
-        }
-    });
-}, "Copy feed of current page");
-
 // follow next/previous link
 // @see https://gist.github.com/304619
 plugins.options["follow-link.targets"]     = 'a[href], input:not([type="hidden"]), button';
