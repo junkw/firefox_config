@@ -7,7 +7,7 @@ require 'fileutils'
 profile_dir = Pathname(ENV["FIREFOX_PROFILE_DIR"])
 chrome_dir = profile_dir + "chrome"
 keysnail_dir = profile_dir + "keysnail"
-keysnail_plugin_dir = profile_dir + "keysnail/plugins"
+keysnail_plugin_dir = keysnail_dir + "/plugins"
 
 
 task :make_dir do
@@ -16,9 +16,7 @@ task :make_dir do
 end
 
 task :link do
-  FileUtils.ln_sf("#{Dir.pwd}/keysnail/_keysnail.js", "#{Dir.home}/.keysnail.js")
-  FileUtils.ln_sf("#{Dir.pwd}/keysnail/_plugins.keysnail.js", keysnail_dir)
-  FileUtils.ln_sf("#{Dir.pwd}/keysnail/exts.keysnail.js", keysnail_dir)
+  FileUtils.ln_sf("#{Dir.pwd}/keysnail", "#{Dir.home}/.keysnail.d")
   FileUtils.ln_sf("#{Dir.pwd}/user.js", profile_dir)
   FileUtils.ln_sf("#{Dir.pwd}/userChrome.css", chrome_dir)
 end

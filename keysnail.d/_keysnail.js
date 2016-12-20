@@ -37,20 +37,9 @@ util.extendDefaultKeymap = function(keymap) {
 };
 
 // Load init files
-// @see https://github.com/958/my-keysnail-setting/blob/master/.keysnail.js
-(function() {
-    try {
-        util.readDirectory(util.getExtensionLocalDirectoryRoot(), true)
-            .filter(function (file) !(/^\.keysnail\.js$/i.test(file.leafName) ||
-                                      !/\.keysnail\.js$/i.test(file.leafName) ||
-                                      file.isDirectory()))
-            .sort()
-            .forEach(function (file) {
-                util.message("Load Keysnail init files: " + file.leafName);
-                userscript.loadSubScript(file.path, modules, true);
-            });
-    } catch (ex) { }
-})();
+userscript.addLoadPath("~/.keysnail.d");
+userscript.require("plugins.keysnail.js");
+userscript.require("exts.keysnail.js");
 //}}%PRESERVE%
 
 // ========================= Special key settings ========================== //
