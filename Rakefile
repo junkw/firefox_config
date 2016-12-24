@@ -5,9 +5,8 @@ require 'fileutils'
 
 
 profile_dir = Pathname(ENV["FIREFOX_PROFILE_DIR"])
-chrome_dir = profile_dir + "chrome"
-keysnail_dir = profile_dir + "keysnail"
-keysnail_plugin_dir = keysnail_dir + "/plugins"
+chrome_dir  = profile_dir + "/chrome"
+keysnail_plugin_dir = profile_dir + "/keysnail/plugins"
 
 
 task :make_dir do
