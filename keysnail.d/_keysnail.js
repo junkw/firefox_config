@@ -3,8 +3,8 @@
 // ============================ PRESERVE area ============================== //
 //{{%PRESERVE%
 // migemo
-// prompt.useMigemo           = true;
-// prompt.migemoMinWordLength = 3;
+prompt.useMigemo           = true;
+prompt.migemoMinWordLength = 3;
 
 // killring
 command.kill.killRingMax   = 20;
