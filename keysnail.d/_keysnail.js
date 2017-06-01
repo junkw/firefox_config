@@ -37,7 +37,7 @@ util.extendDefaultKeymap = function(keymap) {
 };
 
 // Load init files
-userscript.addLoadPath("~/.keysnail.d");
+userscript.addLoadPath("~/etc/conf.d/firefox_config/keysnail.d/");
 userscript.require("plugins.keysnail.js");
 userscript.require("exts.keysnail.js");
 //}}%PRESERVE%
