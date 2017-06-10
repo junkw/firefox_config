@@ -1,3 +1,8 @@
+// about:config
+ext.add("open-about-config", function() {
+    openUILinkIn('about:config', 'tab');
+}, "Open about:config");
+
 // Describe Key
 // @see https://gist.github.com/420462
 ext.add("describe-key", function(ev, arg) {
