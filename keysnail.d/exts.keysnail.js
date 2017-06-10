@@ -103,6 +103,10 @@ ext.add("sync-firefox-data", function() {
     window.gSyncUI.doSync();
 }, "Start Firefox Sync");
 
+ext.add("view-synced-tabs", function() {
+    openUILinkIn('about:sync-tabs', 'tab');
+}, "View Synced Tabs");
+
 // Clear cache
 // @see http://www.pshared.net/diary/20111029.html
 ext.add("clear-cache", function(ev, arg) {
