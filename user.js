@@ -1,3 +1,7 @@
+// Enable Electrolysis (multi-process)
+user_pref("browser.tabs.remote.autostart", true);
+user_pref("dom.ipc.processCount", 2);
+
 // Auto-assignment on memory cache
 user_pref("browser.cache.memory.capacity", -1);
 
