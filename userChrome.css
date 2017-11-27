@@ -1,11 +1,11 @@
 @charset "utf-8";
-@namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul");
+
 
 /**
  *  Location bar
  */
 
-/* Disable IME mode in Location bar and Keysnail prompt */
+/* Disable IME mode in Location bar */
 #urlbar *|input,
 #keysnail-prompt-textbox *|input
 {
@@ -16,6 +16,42 @@
 #PopupAutoCompleteRichResult[type="autocomplete-richlistbox"] {
     opacity: 0.96 !important;
 }
+
+
+/**
+ * Context menu
+ */
+#context-back,
+#context-forward,
+#context-reload,
+#context-stop,
+#context-bookmarkpage,
+#context-sep-navigation,       /* Line separator */
+#context-sendpage,             /* Send page in an email */
+#context-sendlink,             /* Send a link in an email */
+#context-sendimage,            /* Send an image in a email */
+#context-setDesktopBackground, /* Set an image as the desktop background */
+#context-blockimage,           /* Block an image */
+#context-viewbgimage,          /* View background image */
+#context-viewpartialsource-selection, /* View Selection Source */
+#context-viewpartialsource-mathml,    /* View MathML Source */
+#context-sep-viewsource,       /* Line separator */
+#context-viewsource,           /* View Page Source */
+#context-viewinfo,             /* View Page Info */
+#inspect-separator,            /* Line separator */
+#context-inspect + menuseparator
+{
+    display: none !important;
+}
+
+/* frame items */
+#context-printframe + menuseparator, /* Line separator */
+#context-viewframesource,            /* View Frame Source */
+#context-viewframeinfo               /* View Frame Info */
+{
+    display: none !important;
+}
+
 
 /**
  * Keyword addition for Add/Change Bookmark
