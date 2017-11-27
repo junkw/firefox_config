@@ -4,8 +4,12 @@
 
 ** Requirements
 
-   - maOS Sierra
-   - [[https://github.com/mooz/keysnail][Keysnail]]
+   - macOS High Sierra
+
+*** Greasemonkey scripts
+
+	- [[http://userscripts-mirror.org/scripts/show/50324][AccessKey Remover]]
+	- [[http://userscripts-mirror.org/scripts/show/43538][Gmail MonoSpace Font]]
 
 ** Installation
 
