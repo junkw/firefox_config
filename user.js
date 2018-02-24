@@ -12,6 +12,9 @@ user_pref("browser.tabs.tabMinWidth", 100);
 // Don't move and resize window
 user_pref("dom.disable_window_move_resize", true);
 
+// Workaround to install user script from Github and use bookmarklet
+user_pref("security.csp.enable", false);
+
 // Local Variables:
 // mode: js2
 // coding: utf-8
