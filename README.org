@@ -5,11 +5,23 @@
 ** Requirements
 
    - macOS High Sierra
+   - Firefox 57+
+
+*** Add-ons
+
+    - 1Password
+    - bebop
+    - Evernote Web Clipper
+    - Greasemonkey
+    - uBlock Origin
+    - Vim Vixen
+    - Wappalyzer
 
 *** Greasemonkey scripts
 
 	- [[http://userscripts-mirror.org/scripts/show/50324][AccessKey Remover]]
 	- [[http://userscripts-mirror.org/scripts/show/43538][Gmail MonoSpace Font]]
+    - [[https://reek.github.io/anti-adblock-killer/][Anti-Adblock Killer]]
 
 ** Installation
 
