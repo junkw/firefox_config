@@ -9,13 +9,12 @@
 
 *** Add-ons
 
-    - 1Password
-    - bebop
-    - Evernote Web Clipper
-    - Greasemonkey
-    - uBlock Origin
-    - Vim Vixen
-    - Wappalyzer
+    - [[https://agilebits.com/onepassword/extensions][1Password]]
+    - [[https://evernote.com/intl/jp/products/webclipper][Evernote Web Clipper]]
+    - [[https://www.greasespot.net][Greasemonkey]]
+    - [[https://addons.mozilla.org/en-US/firefox/addon/ublock-origin/][uBlock Origin]]
+    - [[https://github.com/ueokande/vim-vixen][Vim Vixen]]
+    - [[https://www.wappalyzer.com/download][Wappalyzer]]
 
 *** Greasemonkey scripts
 
