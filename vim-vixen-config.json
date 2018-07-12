@@ -186,6 +186,7 @@
   ],
   "properties": {
     "hintchars": "abcdefghijklmnopqrstuvwxyz",
-    "smoothscroll": true
+    "smoothscroll": true,
+    "adjacenttab": false
   }
 }
