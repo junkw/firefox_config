@@ -168,6 +168,13 @@
     },
     "<S-Esc>": {
       "type": "addon.toggle.enabled"
+    },
+    "B": {
+      "type": "command.show.addbookmark",
+      "alter": true
+    },
+    "zs": {
+      "type": "page.source"
     }
   },
   "search": {
