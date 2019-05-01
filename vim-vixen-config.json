@@ -175,6 +175,12 @@
     },
     "zs": {
       "type": "page.source"
+    },
+    "m": {
+      "type": "mark.set.prefix"
+    },
+    "'": {
+      "type": "mark.jump.prefix"
     }
   },
   "search": {
@@ -194,6 +200,6 @@
   "properties": {
     "hintchars": "abcdefghijklmnopqrstuvwxyz",
     "smoothscroll": true,
-    "adjacenttab": false
+    "complete": "sbh"
   }
 }
