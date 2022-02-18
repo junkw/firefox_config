@@ -4,8 +4,8 @@
 
 ** Requirements
 
-   - macOS High Sierra
-   - Firefox 57+
+   - macOS
+   - Firefox
 
 *** Add-ons
 
@@ -18,7 +18,7 @@
 
 *** Greasemonkey scripts
 
-    - [[https://openuserjs.org/scripts/jparise/Gmail_Fixed_Font][Gmail Fixed Font]]
+    - [[https://github.com/jparise/gmail-fixed-font][Gmail Fixed Font]]
     - [[https://reek.github.io/anti-adblock-killer/][Anti-Adblock Killer]]
 
 ** Installation
