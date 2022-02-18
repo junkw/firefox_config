@@ -10,8 +10,9 @@
 *** Add-ons
 
     - [[https://agilebits.com/onepassword/extensions][1Password]]
-    - [[https://evernote.com/intl/jp/products/webclipper][Evernote Web Clipper]]
+    - [[https://addons.mozilla.org/ja/firefox/addon/copy-as-org-mode/][Copy as Org-Mode]]
     - [[https://www.greasespot.net][Greasemonkey]]
+    - [[https://www.notion.so/web-clipper][Notion]]
     - [[https://addons.mozilla.org/en-US/firefox/addon/ublock-origin/][uBlock Origin]]
     - [[https://github.com/ueokande/vim-vixen][Vim Vixen]]
     - [[https://www.wappalyzer.com/download][Wappalyzer]]
